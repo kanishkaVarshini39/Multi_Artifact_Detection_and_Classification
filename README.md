@@ -1,6 +1,7 @@
 # Project 29 — Multi-Artifact Detection and Classification
 
-Objectives
+## Objectives
+
 1.Build a multi-artifact corpus in which the presence
 vector is exact by construction, severity is recorded, and
 no label is attached to an artifact that cannot be seen.
@@ -21,7 +22,7 @@ the two should be hard to separate.
 the regions the model relies on, by erasing them and
 re-running the model.
 
-## What is in here
+## Repository Structure
 
 ```
 code/                             50 Python files, five stages + a live demo
