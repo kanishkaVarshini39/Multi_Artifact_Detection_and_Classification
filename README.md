@@ -113,27 +113,3 @@ cd code/Stage_1_dataset_generation
 python3 scripts/calibrate_floors.py && python3 scripts/generate_dataset.py
 ```
 
-
-## Notes for a reader checking this
-
-**Dataset discovery.** Each stage resolves the data through
-`DATASET_CANDIDATES` in its `config.py` / `settings.py`. The package layout here
-is tried first. To point a stage at a different copy, edit that list — nothing
-else hardcodes a data path.
-
-**Normalisation window.** The `fixed` regime divides by a fixed physical window,
-`window_mu_max = 0.03866064` per-pixel units (60 keV effective).
-It is a property of the dataset, so it is recorded in
-`metadata/preprocess_window.json` and read from there.
-
-**Model weights.** Four checkpoints ship, enough to run the demo and reproduce
-the headline model: the three Stage 2 models and
-`resnet18_per_image_pretrained.pt`. The other six checkpoints from the
-normalisation x initialisation grid and the Stage 5 experiment arms are omitted
-for size; `run_stage_b.py` and `run_stage_d.py` retrain them.
-
-**Verified before packaging.** From inside this package, the shipped checkpoint
-scores **macro-F1 0.9965** on `testing data/test` at its stored thresholds
-(0.9887 / 1.0000 / 0.9972 / 1.0000 for beam hardening / ring / metal / scatter),
-exact-match 0.9860 — the figure reported in the write-up. All 2760 image paths
-resolve and all 2760 sample ids are unique.
