@@ -1,0 +1,101 @@
+==============================================================================
+STAGE B - MULTI-LABEL CNN
+==============================================================================
+
+Stage A target: XGBoost  macro-F1 0.9811  exact-match 0.9302
+device: mps   epochs: 100   severity heads: False
+
+==============================================================================
+REGIME: fixed   (global brightness available)
+==============================================================================
+    caching 1680 images ... 440 MB
+    caching 362 images ... 95 MB
+    caching 358 images ... 94 MB
+    caching 360 images ... 94 MB
+  dataset: /Users/kanishka/Documents/AI:ML Course Project /ct_multiartifact/data (flat)
+  train=1680  val=362  test=358  test_ood_severity=360
+
+  --- fixed / pretrained ---
+Downloading: "https://download.pytorch.org/models/resnet18-f37072fd.pth" to /Users/kanishka/.cache/torch/hub/checkpoints/resnet18-f37072fd.pth
+  0%|          | 0.00/44.7M [00:00<?, ?B/s]  6%|▌         | 2.62M/44.7M [00:00<00:01, 27.1MB/s] 12%|█▏        | 5.50M/44.7M [00:00<00:01, 28.1MB/s] 19%|█▉        | 8.50M/44.7M [00:00<00:01, 29.2MB/s] 26%|██▌       | 11.5M/44.7M [00:00<00:01, 29.8MB/s] 32%|███▏      | 14.4M/44.7M [00:00<00:01, 29.8MB/s] 39%|███▊      | 17.2M/44.7M [00:00<00:00, 29.6MB/s] 45%|████▌     | 20.2M/44.7M [00:00<00:00, 30.1MB/s] 52%|█████▏    | 23.1M/44.7M [00:00<00:00, 29.3MB/s] 58%|█████▊    | 26.1M/44.7M [00:00<00:00, 29.7MB/s] 65%|██████▍   | 29.0M/44.7M [00:01<00:00, 29.7MB/s] 71%|███████▏  | 31.9M/44.7M [00:01<00:00, 28.7MB/s] 78%|███████▊  | 34.9M/44.7M [00:01<00:00, 29.2MB/s] 85%|████████▍ | 37.9M/44.7M [00:01<00:00, 29.6MB/s] 91%|█████████ | 40.8M/44.7M [00:01<00:00, 29.2MB/s] 98%|█████████▊| 43.6M/44.7M [00:01<00:00, 29.2MB/s]100%|██████████| 44.7M/44.7M [00:01<00:00, 29.3MB/s]
+/Users/kanishka/Documents/AI:ML Course Project /stage_b_cnn/src/train.py:72: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /Users/runner/work/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:839.)
+  tot += float(loss) * len(x)
+    device=mps  params=11,172,292  init=pretrained  severity_head=False
+      epoch   1  loss=0.2234  val macro-F1=0.8314  best=0.8314 @1
+      epoch  10  loss=0.0112  val macro-F1=1.0000  best=1.0000 @10
+      epoch  20  loss=0.0065  val macro-F1=0.9944  best=1.0000 @10
+      early stop at epoch 25 (no improvement for 15)
+      done in 289s, best val macro-F1 1.0000 @ epoch 10
+      thresholds: beam=0.10, ring=0.04, meta=0.18, scat=0.30
+      TEST  macro-F1=0.9965  exact-match=0.9860  hamming=0.0035
+            per-label F1: beam=0.989  ring=1.000  meta=0.997  scat=1.000
+            BH/scatter confusion: scatter->BH 5.3%, BH->scatter 0.0%
+      OOD   macro-F1=0.9986  exact-match=0.9944
+
+  --- fixed / scratch ---
+    device=mps  params=11,172,292  init=scratch  severity_head=False
+      epoch   1  loss=0.3956  val macro-F1=0.3302  best=0.3302 @1
+      epoch  10  loss=0.0704  val macro-F1=0.8337  best=0.9316 @3
+      epoch  20  loss=0.0384  val macro-F1=0.9731  best=0.9768 @17
+      epoch  30  loss=0.0319  val macro-F1=0.9633  best=0.9768 @17
+      epoch  40  loss=0.0210  val macro-F1=0.9518  best=0.9893 @31
+      early stop at epoch 46 (no improvement for 15)
+      done in 528s, best val macro-F1 0.9893 @ epoch 31
+      thresholds: beam=0.36, ring=0.32, meta=0.46, scat=0.42
+      TEST  macro-F1=0.9846  exact-match=0.9385  hamming=0.0154
+            per-label F1: beam=0.975  ring=0.975  meta=1.000  scat=0.989
+            BH/scatter confusion: scatter->BH 11.8%, BH->scatter 3.9%
+      OOD   macro-F1=0.9762  exact-match=0.9056
+
+==============================================================================
+REGIME: per_image   (global brightness removed - the honest test)
+==============================================================================
+  dataset: /Users/kanishka/Documents/AI:ML Course Project /ct_multiartifact/data (flat)
+  train=1680  val=362  test=358  test_ood_severity=360
+
+  --- per_image / pretrained ---
+    device=mps  params=11,172,292  init=pretrained  severity_head=False
+      epoch   1  loss=0.2093  val macro-F1=0.9666  best=0.9666 @1
+      epoch  10  loss=0.0163  val macro-F1=0.9937  best=0.9937 @10
+      epoch  20  loss=0.0202  val macro-F1=0.9791  best=0.9979 @18
+      epoch  30  loss=0.0131  val macro-F1=0.9903  best=0.9979 @18
+      epoch  40  loss=0.0024  val macro-F1=0.9972  best=0.9986 @34
+      early stop at epoch 49 (no improvement for 15)
+      done in 564s, best val macro-F1 0.9986 @ epoch 34
+      thresholds: beam=0.68, ring=0.04, meta=0.26, scat=0.04
+      TEST  macro-F1=0.9965  exact-match=0.9860  hamming=0.0035
+            per-label F1: beam=0.989  ring=1.000  meta=0.997  scat=1.000
+            BH/scatter confusion: scatter->BH 5.3%, BH->scatter 0.0%
+      OOD   macro-F1=0.9836  exact-match=0.9361
+
+  --- per_image / scratch ---
+    device=mps  params=11,172,292  init=scratch  severity_head=False
+      epoch   1  loss=0.4231  val macro-F1=0.4955  best=0.4955 @1
+      epoch  10  loss=0.1587  val macro-F1=0.8580  best=0.9181 @7
+      epoch  20  loss=0.0889  val macro-F1=0.8829  best=0.9558 @19
+      epoch  30  loss=0.0710  val macro-F1=0.8908  best=0.9582 @28
+      epoch  40  loss=0.0507  val macro-F1=0.9517  best=0.9634 @34
+      early stop at epoch 49 (no improvement for 15)
+      done in 1861s, best val macro-F1 0.9634 @ epoch 34
+      thresholds: beam=0.72, ring=0.54, meta=0.60, scat=0.04
+      TEST  macro-F1=0.9653  exact-match=0.8659  hamming=0.0342
+            per-label F1: beam=0.952  ring=0.972  meta=0.946  scat=0.992
+            BH/scatter confusion: scatter->BH 11.8%, BH->scatter 3.9%
+      OOD   macro-F1=0.9315  exact-match=0.7528
+
+==============================================================================
+SUMMARY (test split)
+==============================================================================
+                  name  macro_f1  exact_match  ood_macro_f1  scatter_to_bh  bh_to_scatter
+    fixed / pretrained    0.9965       0.9860        0.9986         0.0526         0.0000
+       fixed / scratch    0.9846       0.9385        0.9762         0.1184         0.0395
+per_image / pretrained    0.9965       0.9860        0.9836         0.0526         0.0000
+   per_image / scratch    0.9653       0.8659        0.9315         0.1184         0.0395
+
+classical baseline : macro-F1 0.9811  exact 0.9302
+best CNN arm       : macro-F1 0.9965  exact 0.9860   (fixed / pretrained)
+delta              : +0.0153 macro-F1, +0.0559 exact-match
+
+wrote results/, figures and summary.md
+total 3257s

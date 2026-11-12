@@ -1,0 +1,7 @@
+{
+  "window_mu_max": 0.0386606446875,
+  "window_mu_min": 0.0,
+  "e_eff_kev": 60.0,
+  "source": "code/Stage_1_dataset_generation/src/preprocess.py",
+  "note": "Fixed physical window for the 'fixed' normalisation regime: 1.10 x mu_aluminium at the effective energy, in per-pixel units."
+}

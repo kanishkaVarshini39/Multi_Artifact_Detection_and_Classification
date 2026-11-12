@@ -1,0 +1,599 @@
+{
+  "rule_based": {
+    "rules": {
+      "beam_hardening": {
+        "rule": "obj_mean < 0.0091807",
+        "feature": "obj_mean",
+        "threshold": 0.009180661764705883,
+        "direction": "<",
+        "val_f1": 0.8102
+      },
+      "ring": {
+        "rule": "ring_rms > 0.054207",
+        "feature": "ring_rms",
+        "threshold": 0.05420734705882353,
+        "direction": ">",
+        "val_f1": 0.9268
+      },
+      "metal": {
+        "rule": "streak_index > 1.9653",
+        "feature": "streak_index",
+        "threshold": 1.9653285441176471,
+        "direction": ">",
+        "val_f1": 0.9944
+      },
+      "scatter": {
+        "rule": "bg_level < 0.00063158",
+        "feature": "bg_level",
+        "threshold": 0.0006315794117647062,
+        "direction": "<",
+        "val_f1": 0.9708
+      }
+    },
+    "test": {
+      "per_label": {
+        "beam_hardening": {
+          "precision": 0.7216494845360825,
+          "recall": 0.8,
+          "f1": 0.7588075880758808,
+          "support": 175,
+          "auroc": 0.848696330991413
+        },
+        "ring": {
+          "precision": 0.9052631578947369,
+          "recall": 0.9828571428571429,
+          "f1": 0.9424657534246575,
+          "support": 175,
+          "auroc": 0.970335675253708
+        },
+        "metal": {
+          "precision": 0.9659090909090909,
+          "recall": 0.9714285714285714,
+          "f1": 0.9686609686609686,
+          "support": 175,
+          "auroc": 0.9978454332552693
+        },
+        "scatter": {
+          "precision": 1.0,
+          "recall": 0.9714285714285714,
+          "f1": 0.9855072463768116,
+          "support": 175,
+          "auroc": 0.984855581576893
+        }
+      },
+      "macro_f1": 0.9138603891345796,
+      "micro_f1": 0.9118881118881119,
+      "exact_match": 0.6675977653631285,
+      "hamming_loss": 0.08798882681564246,
+      "n": 358,
+      "macro_auroc": 0.9504332552693208
+    }
+  },
+  "rf": {
+    "selection": {
+      "beam_hardening": {
+        "params": {
+          "n_estimators": 600,
+          "max_depth": 12,
+          "min_samples_leaf": 1
+        },
+        "threshold": 0.5,
+        "val_auroc": 0.9928
+      },
+      "ring": {
+        "params": {
+          "n_estimators": 300,
+          "max_depth": 12,
+          "min_samples_leaf": 1
+        },
+        "threshold": 0.66,
+        "val_auroc": 0.996
+      },
+      "metal": {
+        "params": {
+          "n_estimators": 300,
+          "max_depth": null,
+          "min_samples_leaf": 1
+        },
+        "threshold": 0.24,
+        "val_auroc": 1.0
+      },
+      "scatter": {
+        "params": {
+          "n_estimators": 300,
+          "max_depth": null,
+          "min_samples_leaf": 1
+        },
+        "threshold": 0.22,
+        "val_auroc": 1.0
+      }
+    },
+    "test": {
+      "per_label": {
+        "beam_hardening": {
+          "precision": 0.9175824175824175,
+          "recall": 0.9542857142857143,
+          "f1": 0.9355742296918768,
+          "support": 175,
+          "auroc": 0.9814832162373146
+        },
+        "ring": {
+          "precision": 0.9881656804733728,
+          "recall": 0.9542857142857143,
+          "f1": 0.9709302325581395,
+          "support": 175,
+          "auroc": 0.9973302107728337
+        },
+        "metal": {
+          "precision": 0.9943181818181818,
+          "recall": 1.0,
+          "f1": 0.9971509971509972,
+          "support": 175,
+          "auroc": 1.0
+        },
+        "scatter": {
+          "precision": 0.9943181818181818,
+          "recall": 1.0,
+          "f1": 0.9971509971509972,
+          "support": 175,
+          "auroc": 1.0
+        }
+      },
+      "macro_f1": 0.9752016141380027,
+      "micro_f1": 0.9750534568781183,
+      "exact_match": 0.9022346368715084,
+      "hamming_loss": 0.024441340782122904,
+      "n": 358,
+      "macro_auroc": 0.9947033567525371
+    }
+  },
+  "xgb": {
+    "selection": {
+      "beam_hardening": {
+        "params": {
+          "n_estimators": 600,
+          "max_depth": 3,
+          "learning_rate": 0.1
+        },
+        "threshold": 0.56,
+        "val_auroc": 0.9988
+      },
+      "ring": {
+        "params": {
+          "n_estimators": 300,
+          "max_depth": 5,
+          "learning_rate": 0.1
+        },
+        "threshold": 0.86,
+        "val_auroc": 0.9974
+      },
+      "metal": {
+        "params": {
+          "n_estimators": 300,
+          "max_depth": 3,
+          "learning_rate": 0.05
+        },
+        "threshold": 0.04,
+        "val_auroc": 1.0
+      },
+      "scatter": {
+        "params": {
+          "n_estimators": 600,
+          "max_depth": 3,
+          "learning_rate": 0.05
+        },
+        "threshold": 0.1,
+        "val_auroc": 0.9997
+      }
+    },
+    "test": {
+      "per_label": {
+        "beam_hardening": {
+          "precision": 0.9712643678160919,
+          "recall": 0.9657142857142857,
+          "f1": 0.9684813753581661,
+          "support": 175,
+          "auroc": 0.9905074160811866
+        },
+        "ring": {
+          "precision": 0.9878787878787879,
+          "recall": 0.9314285714285714,
+          "f1": 0.9588235294117647,
+          "support": 175,
+          "auroc": 0.9968462138953942
+        },
+        "metal": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 175,
+          "auroc": 1.0
+        },
+        "scatter": {
+          "precision": 0.9943181818181818,
+          "recall": 1.0,
+          "f1": 0.9971509971509972,
+          "support": 175,
+          "auroc": 0.9999375487900078
+        }
+      },
+      "macro_f1": 0.981113975480232,
+      "micro_f1": 0.981294964028777,
+      "exact_match": 0.9301675977653632,
+      "hamming_loss": 0.018156424581005588,
+      "n": 358,
+      "macro_auroc": 0.9968227946916471
+    }
+  },
+  "best_baseline": {
+    "name": "XGBoost",
+    "macro_f1": 0.981113975480232,
+    "micro_f1": 0.981294964028777,
+    "exact_match": 0.9301675977653632,
+    "hamming_loss": 0.018156424581005588,
+    "n": 358,
+    "macro_auroc": 0.9968227946916471
+  },
+  "feature_overlap": {
+    "beam_hardening": {
+      "beam_hardening": 1.0,
+      "ring": 0.0073,
+      "metal": 0.0334,
+      "scatter": 0.1167
+    },
+    "ring": {
+      "beam_hardening": 0.0073,
+      "ring": 1.0,
+      "metal": 0.0001,
+      "scatter": 0.012
+    },
+    "metal": {
+      "beam_hardening": 0.0334,
+      "ring": 0.0001,
+      "metal": 1.0,
+      "scatter": 0.0095
+    },
+    "scatter": {
+      "beam_hardening": 0.1167,
+      "ring": 0.012,
+      "metal": 0.0095,
+      "scatter": 1.0
+    }
+  },
+  "top_features": {
+    "beam_hardening": [
+      [
+        "obj_mean",
+        0.3935
+      ],
+      [
+        "streak_index",
+        0.0778
+      ],
+      [
+        "bg_level",
+        0.0463
+      ]
+    ],
+    "ring": [
+      [
+        "radial_hp_std",
+        0.1034
+      ],
+      [
+        "ring_rms",
+        0.0625
+      ],
+      [
+        "radial_hp_kurtosis",
+        0.022
+      ]
+    ],
+    "metal": [
+      [
+        "peak_ratio",
+        0.2402
+      ],
+      [
+        "obj_std",
+        0.0042
+      ],
+      [
+        "obj_mean",
+        0.0
+      ]
+    ],
+    "scatter": [
+      [
+        "bg_level",
+        0.3599
+      ],
+      [
+        "obj_std",
+        0.0058
+      ],
+      [
+        "peak_ratio",
+        0.0033
+      ]
+    ]
+  },
+  "shortcut_ablation": {
+    "all 14 features": {
+      "per_label": {
+        "beam_hardening": {
+          "precision": 0.9712643678160919,
+          "recall": 0.9657142857142857,
+          "f1": 0.9684813753581661,
+          "support": 175,
+          "auroc": 0.9905074160811866
+        },
+        "ring": {
+          "precision": 0.9878787878787879,
+          "recall": 0.9314285714285714,
+          "f1": 0.9588235294117647,
+          "support": 175,
+          "auroc": 0.9968462138953942
+        },
+        "metal": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 175,
+          "auroc": 1.0
+        },
+        "scatter": {
+          "precision": 0.9943181818181818,
+          "recall": 1.0,
+          "f1": 0.9971509971509972,
+          "support": 175,
+          "auroc": 0.9999375487900078
+        }
+      },
+      "macro_f1": 0.981113975480232,
+      "micro_f1": 0.981294964028777,
+      "exact_match": 0.9301675977653632,
+      "hamming_loss": 0.018156424581005588,
+      "n": 358,
+      "macro_auroc": 0.9968227946916471,
+      "false_bh_given_scatter": 0.06578947368421052,
+      "false_scatter_given_bh": 0.0
+    },
+    "shape only (no obj_mean/bg_level)": {
+      "per_label": {
+        "beam_hardening": {
+          "precision": 0.8367346938775511,
+          "recall": 0.9371428571428572,
+          "f1": 0.8840970350404312,
+          "support": 175,
+          "auroc": 0.9533177205308353
+        },
+        "ring": {
+          "precision": 0.9882352941176471,
+          "recall": 0.96,
+          "f1": 0.9739130434782609,
+          "support": 175,
+          "auroc": 0.9976268540202966
+        },
+        "metal": {
+          "precision": 0.9887005649717514,
+          "recall": 1.0,
+          "f1": 0.9943181818181818,
+          "support": 175,
+          "auroc": 1.0
+        },
+        "scatter": {
+          "precision": 0.8771929824561403,
+          "recall": 0.8571428571428571,
+          "f1": 0.8670520231213873,
+          "support": 175,
+          "auroc": 0.9517564402810305
+        }
+      },
+      "macro_f1": 0.9298450708645652,
+      "micro_f1": 0.9292786421499293,
+      "exact_match": 0.7541899441340782,
+      "hamming_loss": 0.06983240223463687,
+      "n": 358,
+      "macro_auroc": 0.9756752537080405,
+      "false_bh_given_scatter": 0.42105263157894735,
+      "false_scatter_given_bh": 0.27631578947368424
+    },
+    "level only (obj_mean, bg_level)": {
+      "per_label": {
+        "beam_hardening": {
+          "precision": 0.7109004739336493,
+          "recall": 0.8571428571428571,
+          "f1": 0.7772020725388601,
+          "support": 175,
+          "auroc": 0.8869633099141295
+        },
+        "ring": {
+          "precision": 0.4888268156424581,
+          "recall": 1.0,
+          "f1": 0.6566604127579737,
+          "support": 175,
+          "auroc": 0.5586729117876659
+        },
+        "metal": {
+          "precision": 0.7272727272727273,
+          "recall": 0.8228571428571428,
+          "f1": 0.7721179624664879,
+          "support": 175,
+          "auroc": 0.8435597189695551
+        },
+        "scatter": {
+          "precision": 0.9941520467836257,
+          "recall": 0.9714285714285714,
+          "f1": 0.9826589595375722,
+          "support": 175,
+          "auroc": 0.9944574551131927
+        }
+      },
+      "macro_f1": 0.7971598518252235,
+      "micro_f1": 0.7802197802197802,
+      "exact_match": 0.31843575418994413,
+      "hamming_loss": 0.25139664804469275,
+      "n": 358,
+      "macro_auroc": 0.8209133489461358,
+      "false_bh_given_scatter": 0.5526315789473685,
+      "false_scatter_given_bh": 0.0
+    }
+  },
+  "by_n_artifacts": [
+    {
+      "n_artifacts": 0,
+      "n_samples": 45,
+      "exact_match": 1.0,
+      "hamming": 0.0
+    },
+    {
+      "n_artifacts": 1,
+      "n_samples": 88,
+      "exact_match": 0.9204545454545454,
+      "hamming": 0.019886363636363636
+    },
+    {
+      "n_artifacts": 2,
+      "n_samples": 108,
+      "exact_match": 0.8981481481481481,
+      "hamming": 0.02546296296296296
+    },
+    {
+      "n_artifacts": 3,
+      "n_samples": 72,
+      "exact_match": 0.9305555555555556,
+      "hamming": 0.017361111111111112
+    },
+    {
+      "n_artifacts": 4,
+      "n_samples": 45,
+      "exact_match": 0.9555555555555556,
+      "hamming": 0.016666666666666666
+    }
+  ],
+  "cross_label_confusion": [
+    {
+      "present": "scatter",
+      "falsely_predicted": "beam_hardening",
+      "n": 76,
+      "false_rate": 0.06578947368421052,
+      "recall_of_present": 1.0
+    },
+    {
+      "present": "ring",
+      "falsely_predicted": "beam_hardening",
+      "n": 76,
+      "false_rate": 0.039473684210526314,
+      "recall_of_present": 0.881578947368421
+    },
+    {
+      "present": "metal",
+      "falsely_predicted": "ring",
+      "n": 76,
+      "false_rate": 0.02631578947368421,
+      "recall_of_present": 1.0
+    },
+    {
+      "present": "metal",
+      "falsely_predicted": "scatter",
+      "n": 76,
+      "false_rate": 0.013157894736842105,
+      "recall_of_present": 1.0
+    },
+    {
+      "present": "beam_hardening",
+      "falsely_predicted": "ring",
+      "n": 76,
+      "false_rate": 0.0,
+      "recall_of_present": 0.9736842105263158
+    },
+    {
+      "present": "beam_hardening",
+      "falsely_predicted": "metal",
+      "n": 76,
+      "false_rate": 0.0,
+      "recall_of_present": 0.9342105263157895
+    },
+    {
+      "present": "beam_hardening",
+      "falsely_predicted": "scatter",
+      "n": 76,
+      "false_rate": 0.0,
+      "recall_of_present": 0.9736842105263158
+    },
+    {
+      "present": "ring",
+      "falsely_predicted": "metal",
+      "n": 76,
+      "false_rate": 0.0,
+      "recall_of_present": 0.9868421052631579
+    },
+    {
+      "present": "ring",
+      "falsely_predicted": "scatter",
+      "n": 76,
+      "false_rate": 0.0,
+      "recall_of_present": 0.8947368421052632
+    },
+    {
+      "present": "metal",
+      "falsely_predicted": "beam_hardening",
+      "n": 76,
+      "false_rate": 0.0,
+      "recall_of_present": 1.0
+    },
+    {
+      "present": "scatter",
+      "falsely_predicted": "ring",
+      "n": 76,
+      "false_rate": 0.0,
+      "recall_of_present": 1.0
+    },
+    {
+      "present": "scatter",
+      "falsely_predicted": "metal",
+      "n": 76,
+      "false_rate": 0.0,
+      "recall_of_present": 1.0
+    }
+  ],
+  "ood_severity": {
+    "per_label": {
+      "beam_hardening": {
+        "precision": 0.8857142857142857,
+        "recall": 0.8857142857142857,
+        "f1": 0.8857142857142857,
+        "support": 175,
+        "auroc": 0.9567876447876448
+      },
+      "ring": {
+        "precision": 1.0,
+        "recall": 0.9314285714285714,
+        "f1": 0.9644970414201184,
+        "support": 175,
+        "auroc": 0.9983320463320464
+      },
+      "metal": {
+        "precision": 0.9942857142857143,
+        "recall": 0.9886363636363636,
+        "f1": 0.9914529914529915,
+        "support": 176,
+        "auroc": 0.9994750494071146
+      },
+      "scatter": {
+        "precision": 0.9941176470588236,
+        "recall": 0.9602272727272727,
+        "f1": 0.976878612716763,
+        "support": 176,
+        "auroc": 0.9881114130434782
+      }
+    },
+    "macro_f1": 0.9546357328260395,
+    "micro_f1": 0.9545126353790614,
+    "exact_match": 0.8333333333333334,
+    "hamming_loss": 0.04375,
+    "n": 360,
+    "macro_auroc": 0.985676538392571
+  }
+}

@@ -1,0 +1,29 @@
+==============================================================================
+MULTI-SEED REPEATS - 1 runs (1 seeds x 1 regimes x 1 inits)
+==============================================================================
+device mps   seeds [20261019]
+    caching 1680 images ... 440 MB
+    caching 362 images ... 95 MB
+    caching 358 images ... 94 MB
+    caching 360 images ... 94 MB
+
+[1/1] per_image|pretrained|20261019
+    test macro-F1=0.9944  exact=0.9777  OOD macro-F1=0.9843  (364s, best epoch 15)
+
+==============================================================================
+PER-ARM SUMMARY  (mean +/- sd over seeds)
+==============================================================================
+arm                         n           macro-F1        exact-match       OOD macro-F1
+fixed/pretrained            3    0.9967+/-0.0011    0.9870+/-0.0043    0.9955+/-0.0027
+per_image/pretrained        3    0.9965+/-0.0021    0.9860+/-0.0084    0.9843+/-0.0007
+
+==============================================================================
+PAIRED DIFFERENCES  (computed within each seed, then averaged)
+==============================================================================
+  fixed - per_image  [pretrained]    macro_f1       +0.0002 +/-0.0032  n=3
+  fixed - per_image  [pretrained]    exact_match    +0.0009 +/-0.0126  n=3
+  fixed - per_image  [pretrained]    ood_macro_f1   +0.0112 +/-0.0033  n=3
+
+wrote /Users/kanishka/Documents/AI:ML Course Project /stage_b_cnn/results/multiseed/runs.csv, summary_by_arm.csv, paired_differences.json, summary.md
+
+total 373s

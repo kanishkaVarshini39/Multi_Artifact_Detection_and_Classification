@@ -1,0 +1,5162 @@
+{
+  "A_singles_only": {
+    "description": "single-artifact data only, n=630",
+    "n_train": 630,
+    "best_epoch": -1,
+    "seconds": 0.0,
+    "slices": {
+      "single_or_clean": {
+        "per_label": {
+          "beam_hardening": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 22,
+            "auroc": 1.0
+          },
+          "ring": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 22,
+            "auroc": 1.0
+          },
+          "metal": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 22,
+            "auroc": 1.0
+          },
+          "scatter": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 22,
+            "auroc": 1.0
+          }
+        },
+        "macro_f1": 1.0,
+        "micro_f1": 1.0,
+        "exact_match": 1.0,
+        "hamming_loss": 0.0,
+        "n": 133,
+        "macro_auroc": 1.0,
+        "by_n_artifacts": [
+          {
+            "n_artifacts": 0,
+            "n_samples": 45,
+            "exact_match": 1.0,
+            "hamming": 0.0
+          },
+          {
+            "n_artifacts": 1,
+            "n_samples": 88,
+            "exact_match": 1.0,
+            "hamming": 0.0
+          }
+        ],
+        "per_combination": [
+          {
+            "combo": "0000",
+            "n_samples": 45,
+            "exact_match": 1.0,
+            "n_artifacts": 0
+          },
+          {
+            "combo": "0001",
+            "n_samples": 22,
+            "exact_match": 1.0,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "0010",
+            "n_samples": 22,
+            "exact_match": 1.0,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "0100",
+            "n_samples": 22,
+            "exact_match": 1.0,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "1000",
+            "n_samples": 22,
+            "exact_match": 1.0,
+            "n_artifacts": 1
+          }
+        ],
+        "cross_label_confusion": [
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "ring",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "metal",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "scatter",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "beam_hardening",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "metal",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "scatter",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "beam_hardening",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "ring",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "scatter",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "beam_hardening",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "ring",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "metal",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          }
+        ]
+      },
+      "single_only": {
+        "per_label": {
+          "beam_hardening": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 22,
+            "auroc": 1.0
+          },
+          "ring": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 22,
+            "auroc": 1.0
+          },
+          "metal": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 22,
+            "auroc": 1.0
+          },
+          "scatter": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 22,
+            "auroc": 1.0
+          }
+        },
+        "macro_f1": 1.0,
+        "micro_f1": 1.0,
+        "exact_match": 1.0,
+        "hamming_loss": 0.0,
+        "n": 88,
+        "macro_auroc": 1.0,
+        "by_n_artifacts": [
+          {
+            "n_artifacts": 1,
+            "n_samples": 88,
+            "exact_match": 1.0,
+            "hamming": 0.0
+          }
+        ],
+        "per_combination": [
+          {
+            "combo": "0001",
+            "n_samples": 22,
+            "exact_match": 1.0,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "0010",
+            "n_samples": 22,
+            "exact_match": 1.0,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "0100",
+            "n_samples": 22,
+            "exact_match": 1.0,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "1000",
+            "n_samples": 22,
+            "exact_match": 1.0,
+            "n_artifacts": 1
+          }
+        ],
+        "cross_label_confusion": [
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "ring",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "metal",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "scatter",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "beam_hardening",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "metal",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "scatter",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "beam_hardening",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "ring",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "scatter",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "beam_hardening",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "ring",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "metal",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          }
+        ]
+      },
+      "multi_artifact": {
+        "per_label": {
+          "beam_hardening": {
+            "precision": 1.0,
+            "recall": 0.0392156862745098,
+            "f1": 0.07547169811320754,
+            "support": 153,
+            "auroc": 0.6847312999273784
+          },
+          "ring": {
+            "precision": 1.0,
+            "recall": 0.8954248366013072,
+            "f1": 0.9448275862068966,
+            "support": 153,
+            "auroc": 0.9186637618010167
+          },
+          "metal": {
+            "precision": 1.0,
+            "recall": 0.45751633986928103,
+            "f1": 0.6278026905829597,
+            "support": 153,
+            "auroc": 0.955791575889615
+          },
+          "scatter": {
+            "precision": 1.0,
+            "recall": 0.954248366013072,
+            "f1": 0.9765886287625418,
+            "support": 153,
+            "auroc": 0.9961873638344226
+          }
+        },
+        "macro_f1": 0.6561726509164014,
+        "micro_f1": 0.7394438722966015,
+        "exact_match": 0.17333333333333334,
+        "hamming_loss": 0.2811111111111111,
+        "n": 225,
+        "macro_auroc": 0.8888435003631082,
+        "by_n_artifacts": [
+          {
+            "n_artifacts": 2,
+            "n_samples": 108,
+            "exact_match": 0.3333333333333333,
+            "hamming": 0.16666666666666666
+          },
+          {
+            "n_artifacts": 3,
+            "n_samples": 72,
+            "exact_match": 0.041666666666666664,
+            "hamming": 0.3229166666666667
+          },
+          {
+            "n_artifacts": 4,
+            "n_samples": 45,
+            "exact_match": 0.0,
+            "hamming": 0.4888888888888889
+          }
+        ],
+        "per_combination": [
+          {
+            "combo": "0011",
+            "n_samples": 18,
+            "exact_match": 0.7222222222222222,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "0101",
+            "n_samples": 18,
+            "exact_match": 1.0,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "0110",
+            "n_samples": 18,
+            "exact_match": 0.1111111111111111,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "1001",
+            "n_samples": 18,
+            "exact_match": 0.0,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "1010",
+            "n_samples": 18,
+            "exact_match": 0.16666666666666666,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "1100",
+            "n_samples": 18,
+            "exact_match": 0.0,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "0111",
+            "n_samples": 18,
+            "exact_match": 0.16666666666666666,
+            "n_artifacts": 3
+          },
+          {
+            "combo": "1011",
+            "n_samples": 18,
+            "exact_match": 0.0,
+            "n_artifacts": 3
+          },
+          {
+            "combo": "1101",
+            "n_samples": 18,
+            "exact_match": 0.0,
+            "n_artifacts": 3
+          },
+          {
+            "combo": "1110",
+            "n_samples": 18,
+            "exact_match": 0.0,
+            "n_artifacts": 3
+          },
+          {
+            "combo": "1111",
+            "n_samples": 45,
+            "exact_match": 0.0,
+            "n_artifacts": 4
+          }
+        ],
+        "cross_label_confusion": [
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "ring",
+            "n": 54,
+            "false_rate": 0.0,
+            "recall_of_present": 0.1111111111111111
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "metal",
+            "n": 54,
+            "false_rate": 0.0,
+            "recall_of_present": 0.0
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "scatter",
+            "n": 54,
+            "false_rate": 0.0,
+            "recall_of_present": 0.1111111111111111
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "beam_hardening",
+            "n": 54,
+            "false_rate": 0.0,
+            "recall_of_present": 0.7037037037037037
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "metal",
+            "n": 54,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "scatter",
+            "n": 54,
+            "false_rate": 0.0,
+            "recall_of_present": 0.7037037037037037
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "beam_hardening",
+            "n": 54,
+            "false_rate": 0.0,
+            "recall_of_present": 0.7592592592592593
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "ring",
+            "n": 54,
+            "false_rate": 0.0,
+            "recall_of_present": 0.7592592592592593
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "scatter",
+            "n": 54,
+            "false_rate": 0.0,
+            "recall_of_present": 0.6481481481481481
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "beam_hardening",
+            "n": 54,
+            "false_rate": 0.0,
+            "recall_of_present": 0.8703703703703703
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "ring",
+            "n": 54,
+            "false_rate": 0.0,
+            "recall_of_present": 0.9444444444444444
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "metal",
+            "n": 54,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          }
+        ]
+      },
+      "all": {
+        "per_label": {
+          "beam_hardening": {
+            "precision": 1.0,
+            "recall": 0.16,
+            "f1": 0.27586206896551724,
+            "support": 175,
+            "auroc": 0.6461826697892271
+          },
+          "ring": {
+            "precision": 1.0,
+            "recall": 0.9085714285714286,
+            "f1": 0.9520958083832335,
+            "support": 175,
+            "auroc": 0.9442310694769711
+          },
+          "metal": {
+            "precision": 1.0,
+            "recall": 0.5257142857142857,
+            "f1": 0.6891385767790262,
+            "support": 175,
+            "auroc": 0.9665573770491804
+          },
+          "scatter": {
+            "precision": 1.0,
+            "recall": 0.96,
+            "f1": 0.9795918367346939,
+            "support": 175,
+            "auroc": 0.9981889149102263
+          }
+        },
+        "macro_f1": 0.7241720727156178,
+        "micro_f1": 0.7794245858761988,
+        "exact_match": 0.48044692737430167,
+        "hamming_loss": 0.17667597765363127,
+        "n": 358,
+        "macro_auroc": 0.8887900078064013,
+        "by_n_artifacts": [
+          {
+            "n_artifacts": 0,
+            "n_samples": 45,
+            "exact_match": 1.0,
+            "hamming": 0.0
+          },
+          {
+            "n_artifacts": 1,
+            "n_samples": 88,
+            "exact_match": 1.0,
+            "hamming": 0.0
+          },
+          {
+            "n_artifacts": 2,
+            "n_samples": 108,
+            "exact_match": 0.3333333333333333,
+            "hamming": 0.16666666666666666
+          },
+          {
+            "n_artifacts": 3,
+            "n_samples": 72,
+            "exact_match": 0.041666666666666664,
+            "hamming": 0.3229166666666667
+          },
+          {
+            "n_artifacts": 4,
+            "n_samples": 45,
+            "exact_match": 0.0,
+            "hamming": 0.4888888888888889
+          }
+        ],
+        "per_combination": [
+          {
+            "combo": "0000",
+            "n_samples": 45,
+            "exact_match": 1.0,
+            "n_artifacts": 0
+          },
+          {
+            "combo": "0001",
+            "n_samples": 22,
+            "exact_match": 1.0,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "0010",
+            "n_samples": 22,
+            "exact_match": 1.0,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "0100",
+            "n_samples": 22,
+            "exact_match": 1.0,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "1000",
+            "n_samples": 22,
+            "exact_match": 1.0,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "0011",
+            "n_samples": 18,
+            "exact_match": 0.7222222222222222,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "0101",
+            "n_samples": 18,
+            "exact_match": 1.0,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "0110",
+            "n_samples": 18,
+            "exact_match": 0.1111111111111111,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "1001",
+            "n_samples": 18,
+            "exact_match": 0.0,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "1010",
+            "n_samples": 18,
+            "exact_match": 0.16666666666666666,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "1100",
+            "n_samples": 18,
+            "exact_match": 0.0,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "0111",
+            "n_samples": 18,
+            "exact_match": 0.16666666666666666,
+            "n_artifacts": 3
+          },
+          {
+            "combo": "1011",
+            "n_samples": 18,
+            "exact_match": 0.0,
+            "n_artifacts": 3
+          },
+          {
+            "combo": "1101",
+            "n_samples": 18,
+            "exact_match": 0.0,
+            "n_artifacts": 3
+          },
+          {
+            "combo": "1110",
+            "n_samples": 18,
+            "exact_match": 0.0,
+            "n_artifacts": 3
+          },
+          {
+            "combo": "1111",
+            "n_samples": 45,
+            "exact_match": 0.0,
+            "n_artifacts": 4
+          }
+        ],
+        "cross_label_confusion": [
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "ring",
+            "n": 76,
+            "false_rate": 0.0,
+            "recall_of_present": 0.3684210526315789
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "metal",
+            "n": 76,
+            "false_rate": 0.0,
+            "recall_of_present": 0.2894736842105263
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "scatter",
+            "n": 76,
+            "false_rate": 0.0,
+            "recall_of_present": 0.3684210526315789
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "beam_hardening",
+            "n": 76,
+            "false_rate": 0.0,
+            "recall_of_present": 0.7894736842105263
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "metal",
+            "n": 76,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "scatter",
+            "n": 76,
+            "false_rate": 0.0,
+            "recall_of_present": 0.7894736842105263
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "beam_hardening",
+            "n": 76,
+            "false_rate": 0.0,
+            "recall_of_present": 0.8289473684210527
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "ring",
+            "n": 76,
+            "false_rate": 0.0,
+            "recall_of_present": 0.8289473684210527
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "scatter",
+            "n": 76,
+            "false_rate": 0.0,
+            "recall_of_present": 0.75
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "beam_hardening",
+            "n": 76,
+            "false_rate": 0.0,
+            "recall_of_present": 0.9078947368421053
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "ring",
+            "n": 76,
+            "false_rate": 0.0,
+            "recall_of_present": 0.9605263157894737
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "metal",
+            "n": 76,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          }
+        ]
+      },
+      "clean_only": {
+        "per_label": {
+          "beam_hardening": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0,
+            "auroc": NaN
+          },
+          "ring": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0,
+            "auroc": NaN
+          },
+          "metal": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0,
+            "auroc": NaN
+          },
+          "scatter": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0,
+            "auroc": NaN
+          }
+        },
+        "macro_f1": 0.0,
+        "micro_f1": 0.0,
+        "exact_match": 1.0,
+        "hamming_loss": 0.0,
+        "n": 45,
+        "macro_auroc": NaN,
+        "by_n_artifacts": [
+          {
+            "n_artifacts": 0,
+            "n_samples": 45,
+            "exact_match": 1.0,
+            "hamming": 0.0
+          }
+        ],
+        "per_combination": [
+          {
+            "combo": "0000",
+            "n_samples": 45,
+            "exact_match": 1.0,
+            "n_artifacts": 0
+          }
+        ],
+        "cross_label_confusion": []
+      }
+    },
+    "slices_full_val_thresholds": {
+      "single_or_clean": {
+        "per_label": {
+          "beam_hardening": {
+            "precision": 0.4583333333333333,
+            "recall": 1.0,
+            "f1": 0.6285714285714286,
+            "support": 22,
+            "auroc": 1.0
+          },
+          "ring": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 22,
+            "auroc": 1.0
+          },
+          "metal": {
+            "precision": 0.7857142857142857,
+            "recall": 1.0,
+            "f1": 0.88,
+            "support": 22,
+            "auroc": 1.0
+          },
+          "scatter": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 22,
+            "auroc": 1.0
+          }
+        },
+        "macro_f1": 0.8771428571428571,
+        "micro_f1": 0.8461538461538461,
+        "exact_match": 0.7894736842105263,
+        "hamming_loss": 0.06015037593984962,
+        "n": 133,
+        "macro_auroc": 1.0,
+        "by_n_artifacts": [
+          {
+            "n_artifacts": 0,
+            "n_samples": 45,
+            "exact_match": 0.4,
+            "hamming": 0.17222222222222222
+          },
+          {
+            "n_artifacts": 1,
+            "n_samples": 88,
+            "exact_match": 0.9886363636363636,
+            "hamming": 0.002840909090909091
+          }
+        ],
+        "per_combination": [
+          {
+            "combo": "0000",
+            "n_samples": 45,
+            "exact_match": 0.4,
+            "n_artifacts": 0
+          },
+          {
+            "combo": "0001",
+            "n_samples": 22,
+            "exact_match": 1.0,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "0010",
+            "n_samples": 22,
+            "exact_match": 1.0,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "0100",
+            "n_samples": 22,
+            "exact_match": 0.9545454545454546,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "1000",
+            "n_samples": 22,
+            "exact_match": 1.0,
+            "n_artifacts": 1
+          }
+        ],
+        "cross_label_confusion": [
+          {
+            "present": "ring",
+            "falsely_predicted": "beam_hardening",
+            "n": 22,
+            "false_rate": 0.045454545454545456,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "ring",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "metal",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "scatter",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "metal",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "scatter",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "beam_hardening",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "ring",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "scatter",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "beam_hardening",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "ring",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "metal",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          }
+        ]
+      },
+      "single_only": {
+        "per_label": {
+          "beam_hardening": {
+            "precision": 0.9565217391304348,
+            "recall": 1.0,
+            "f1": 0.9777777777777777,
+            "support": 22,
+            "auroc": 1.0
+          },
+          "ring": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 22,
+            "auroc": 1.0
+          },
+          "metal": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 22,
+            "auroc": 1.0
+          },
+          "scatter": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 22,
+            "auroc": 1.0
+          }
+        },
+        "macro_f1": 0.9944444444444445,
+        "micro_f1": 0.9943502824858758,
+        "exact_match": 0.9886363636363636,
+        "hamming_loss": 0.002840909090909091,
+        "n": 88,
+        "macro_auroc": 1.0,
+        "by_n_artifacts": [
+          {
+            "n_artifacts": 1,
+            "n_samples": 88,
+            "exact_match": 0.9886363636363636,
+            "hamming": 0.002840909090909091
+          }
+        ],
+        "per_combination": [
+          {
+            "combo": "0001",
+            "n_samples": 22,
+            "exact_match": 1.0,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "0010",
+            "n_samples": 22,
+            "exact_match": 1.0,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "0100",
+            "n_samples": 22,
+            "exact_match": 0.9545454545454546,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "1000",
+            "n_samples": 22,
+            "exact_match": 1.0,
+            "n_artifacts": 1
+          }
+        ],
+        "cross_label_confusion": [
+          {
+            "present": "ring",
+            "falsely_predicted": "beam_hardening",
+            "n": 22,
+            "false_rate": 0.045454545454545456,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "ring",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "metal",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "scatter",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "metal",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "scatter",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "beam_hardening",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "ring",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "scatter",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "beam_hardening",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "ring",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "metal",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          }
+        ]
+      },
+      "multi_artifact": {
+        "per_label": {
+          "beam_hardening": {
+            "precision": 0.8947368421052632,
+            "recall": 0.2222222222222222,
+            "f1": 0.35602094240837695,
+            "support": 153,
+            "auroc": 0.6847312999273784
+          },
+          "ring": {
+            "precision": 1.0,
+            "recall": 0.8954248366013072,
+            "f1": 0.9448275862068966,
+            "support": 153,
+            "auroc": 0.9186637618010167
+          },
+          "metal": {
+            "precision": 1.0,
+            "recall": 0.6078431372549019,
+            "f1": 0.7560975609756098,
+            "support": 153,
+            "auroc": 0.955791575889615
+          },
+          "scatter": {
+            "precision": 1.0,
+            "recall": 0.954248366013072,
+            "f1": 0.9765886287625418,
+            "support": 153,
+            "auroc": 0.9961873638344226
+          }
+        },
+        "macro_f1": 0.7583836795883563,
+        "micro_f1": 0.7992202729044834,
+        "exact_match": 0.31555555555555553,
+        "hamming_loss": 0.2288888888888889,
+        "n": 225,
+        "macro_auroc": 0.8888435003631082,
+        "by_n_artifacts": [
+          {
+            "n_artifacts": 2,
+            "n_samples": 108,
+            "exact_match": 0.5462962962962963,
+            "hamming": 0.11805555555555555
+          },
+          {
+            "n_artifacts": 3,
+            "n_samples": 72,
+            "exact_match": 0.16666666666666666,
+            "hamming": 0.2673611111111111
+          },
+          {
+            "n_artifacts": 4,
+            "n_samples": 45,
+            "exact_match": 0.0,
+            "hamming": 0.43333333333333335
+          }
+        ],
+        "per_combination": [
+          {
+            "combo": "0011",
+            "n_samples": 18,
+            "exact_match": 0.6666666666666666,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "0101",
+            "n_samples": 18,
+            "exact_match": 1.0,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "0110",
+            "n_samples": 18,
+            "exact_match": 0.1111111111111111,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "1001",
+            "n_samples": 18,
+            "exact_match": 0.5,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "1010",
+            "n_samples": 18,
+            "exact_match": 0.8333333333333334,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "1100",
+            "n_samples": 18,
+            "exact_match": 0.16666666666666666,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "0111",
+            "n_samples": 18,
+            "exact_match": 0.4444444444444444,
+            "n_artifacts": 3
+          },
+          {
+            "combo": "1011",
+            "n_samples": 18,
+            "exact_match": 0.2222222222222222,
+            "n_artifacts": 3
+          },
+          {
+            "combo": "1101",
+            "n_samples": 18,
+            "exact_match": 0.0,
+            "n_artifacts": 3
+          },
+          {
+            "combo": "1110",
+            "n_samples": 18,
+            "exact_match": 0.0,
+            "n_artifacts": 3
+          },
+          {
+            "combo": "1111",
+            "n_samples": 45,
+            "exact_match": 0.0,
+            "n_artifacts": 4
+          }
+        ],
+        "cross_label_confusion": [
+          {
+            "present": "metal",
+            "falsely_predicted": "beam_hardening",
+            "n": 54,
+            "false_rate": 0.07407407407407407,
+            "recall_of_present": 0.8703703703703703
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "beam_hardening",
+            "n": 54,
+            "false_rate": 0.07407407407407407,
+            "recall_of_present": 0.8703703703703703
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "ring",
+            "n": 54,
+            "false_rate": 0.0,
+            "recall_of_present": 0.5740740740740741
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "metal",
+            "n": 54,
+            "false_rate": 0.0,
+            "recall_of_present": 0.2222222222222222
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "scatter",
+            "n": 54,
+            "false_rate": 0.0,
+            "recall_of_present": 0.37037037037037035
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "beam_hardening",
+            "n": 54,
+            "false_rate": 0.0,
+            "recall_of_present": 0.7037037037037037
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "metal",
+            "n": 54,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "scatter",
+            "n": 54,
+            "false_rate": 0.0,
+            "recall_of_present": 0.7037037037037037
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "ring",
+            "n": 54,
+            "false_rate": 0.0,
+            "recall_of_present": 0.8703703703703703
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "scatter",
+            "n": 54,
+            "false_rate": 0.0,
+            "recall_of_present": 0.7037037037037037
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "ring",
+            "n": 54,
+            "false_rate": 0.0,
+            "recall_of_present": 0.9444444444444444
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "metal",
+            "n": 54,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          }
+        ]
+      },
+      "all": {
+        "per_label": {
+          "beam_hardening": {
+            "precision": 0.6511627906976745,
+            "recall": 0.32,
+            "f1": 0.42911877394636017,
+            "support": 175,
+            "auroc": 0.6461826697892271
+          },
+          "ring": {
+            "precision": 1.0,
+            "recall": 0.9085714285714286,
+            "f1": 0.9520958083832335,
+            "support": 175,
+            "auroc": 0.9442310694769711
+          },
+          "metal": {
+            "precision": 0.9504132231404959,
+            "recall": 0.6571428571428571,
+            "f1": 0.777027027027027,
+            "support": 175,
+            "auroc": 0.9665573770491804
+          },
+          "scatter": {
+            "precision": 1.0,
+            "recall": 0.96,
+            "f1": 0.9795918367346939,
+            "support": 175,
+            "auroc": 0.9981889149102263
+          }
+        },
+        "macro_f1": 0.7844583615228287,
+        "micro_f1": 0.807131280388979,
+        "exact_match": 0.49162011173184356,
+        "hamming_loss": 0.16620111731843576,
+        "n": 358,
+        "macro_auroc": 0.8887900078064013,
+        "by_n_artifacts": [
+          {
+            "n_artifacts": 0,
+            "n_samples": 45,
+            "exact_match": 0.4,
+            "hamming": 0.17222222222222222
+          },
+          {
+            "n_artifacts": 1,
+            "n_samples": 88,
+            "exact_match": 0.9886363636363636,
+            "hamming": 0.002840909090909091
+          },
+          {
+            "n_artifacts": 2,
+            "n_samples": 108,
+            "exact_match": 0.5462962962962963,
+            "hamming": 0.11805555555555555
+          },
+          {
+            "n_artifacts": 3,
+            "n_samples": 72,
+            "exact_match": 0.16666666666666666,
+            "hamming": 0.2673611111111111
+          },
+          {
+            "n_artifacts": 4,
+            "n_samples": 45,
+            "exact_match": 0.0,
+            "hamming": 0.43333333333333335
+          }
+        ],
+        "per_combination": [
+          {
+            "combo": "0000",
+            "n_samples": 45,
+            "exact_match": 0.4,
+            "n_artifacts": 0
+          },
+          {
+            "combo": "0001",
+            "n_samples": 22,
+            "exact_match": 1.0,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "0010",
+            "n_samples": 22,
+            "exact_match": 1.0,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "0100",
+            "n_samples": 22,
+            "exact_match": 0.9545454545454546,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "1000",
+            "n_samples": 22,
+            "exact_match": 1.0,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "0011",
+            "n_samples": 18,
+            "exact_match": 0.6666666666666666,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "0101",
+            "n_samples": 18,
+            "exact_match": 1.0,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "0110",
+            "n_samples": 18,
+            "exact_match": 0.1111111111111111,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "1001",
+            "n_samples": 18,
+            "exact_match": 0.5,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "1010",
+            "n_samples": 18,
+            "exact_match": 0.8333333333333334,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "1100",
+            "n_samples": 18,
+            "exact_match": 0.16666666666666666,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "0111",
+            "n_samples": 18,
+            "exact_match": 0.4444444444444444,
+            "n_artifacts": 3
+          },
+          {
+            "combo": "1011",
+            "n_samples": 18,
+            "exact_match": 0.2222222222222222,
+            "n_artifacts": 3
+          },
+          {
+            "combo": "1101",
+            "n_samples": 18,
+            "exact_match": 0.0,
+            "n_artifacts": 3
+          },
+          {
+            "combo": "1110",
+            "n_samples": 18,
+            "exact_match": 0.0,
+            "n_artifacts": 3
+          },
+          {
+            "combo": "1111",
+            "n_samples": 45,
+            "exact_match": 0.0,
+            "n_artifacts": 4
+          }
+        ],
+        "cross_label_confusion": [
+          {
+            "present": "metal",
+            "falsely_predicted": "beam_hardening",
+            "n": 76,
+            "false_rate": 0.05263157894736842,
+            "recall_of_present": 0.9078947368421053
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "beam_hardening",
+            "n": 76,
+            "false_rate": 0.05263157894736842,
+            "recall_of_present": 0.9078947368421053
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "beam_hardening",
+            "n": 76,
+            "false_rate": 0.013157894736842105,
+            "recall_of_present": 0.7894736842105263
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "ring",
+            "n": 76,
+            "false_rate": 0.0,
+            "recall_of_present": 0.6973684210526315
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "metal",
+            "n": 76,
+            "false_rate": 0.0,
+            "recall_of_present": 0.4473684210526316
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "scatter",
+            "n": 76,
+            "false_rate": 0.0,
+            "recall_of_present": 0.5526315789473685
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "metal",
+            "n": 76,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "scatter",
+            "n": 76,
+            "false_rate": 0.0,
+            "recall_of_present": 0.7894736842105263
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "ring",
+            "n": 76,
+            "false_rate": 0.0,
+            "recall_of_present": 0.9078947368421053
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "scatter",
+            "n": 76,
+            "false_rate": 0.0,
+            "recall_of_present": 0.7894736842105263
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "ring",
+            "n": 76,
+            "false_rate": 0.0,
+            "recall_of_present": 0.9605263157894737
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "metal",
+            "n": 76,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          }
+        ]
+      },
+      "clean_only": {
+        "per_label": {
+          "beam_hardening": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0,
+            "auroc": NaN
+          },
+          "ring": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0,
+            "auroc": NaN
+          },
+          "metal": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0,
+            "auroc": NaN
+          },
+          "scatter": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0,
+            "auroc": NaN
+          }
+        },
+        "macro_f1": 0.0,
+        "micro_f1": 0.0,
+        "exact_match": 0.4,
+        "hamming_loss": 0.17222222222222222,
+        "n": 45,
+        "macro_auroc": NaN,
+        "by_n_artifacts": [
+          {
+            "n_artifacts": 0,
+            "n_samples": 45,
+            "exact_match": 0.4,
+            "hamming": 0.17222222222222222
+          }
+        ],
+        "per_combination": [
+          {
+            "combo": "0000",
+            "n_samples": 45,
+            "exact_match": 0.4,
+            "n_artifacts": 0
+          }
+        ],
+        "cross_label_confusion": []
+      }
+    },
+    "thresholds": [
+      0.9,
+      0.04,
+      0.08,
+      0.04
+    ],
+    "thresholds_full_val": [
+      0.04,
+      0.04,
+      0.04,
+      0.04
+    ]
+  },
+  "B_combined_matched": {
+    "description": "combined data, size-matched, n=630",
+    "n_train": 630,
+    "best_epoch": -1,
+    "seconds": 0.0,
+    "slices": {
+      "single_or_clean": {
+        "per_label": {
+          "beam_hardening": {
+            "precision": 0.9166666666666666,
+            "recall": 1.0,
+            "f1": 0.9565217391304348,
+            "support": 22,
+            "auroc": 1.0
+          },
+          "ring": {
+            "precision": 0.9565217391304348,
+            "recall": 1.0,
+            "f1": 0.9777777777777777,
+            "support": 22,
+            "auroc": 1.0
+          },
+          "metal": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 22,
+            "auroc": 1.0
+          },
+          "scatter": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 22,
+            "auroc": 1.0
+          }
+        },
+        "macro_f1": 0.9835748792270531,
+        "micro_f1": 0.9832402234636871,
+        "exact_match": 0.9774436090225563,
+        "hamming_loss": 0.005639097744360902,
+        "n": 133,
+        "macro_auroc": 1.0,
+        "by_n_artifacts": [
+          {
+            "n_artifacts": 0,
+            "n_samples": 45,
+            "exact_match": 1.0,
+            "hamming": 0.0
+          },
+          {
+            "n_artifacts": 1,
+            "n_samples": 88,
+            "exact_match": 0.9659090909090909,
+            "hamming": 0.008522727272727272
+          }
+        ],
+        "per_combination": [
+          {
+            "combo": "0000",
+            "n_samples": 45,
+            "exact_match": 1.0,
+            "n_artifacts": 0
+          },
+          {
+            "combo": "0001",
+            "n_samples": 22,
+            "exact_match": 0.9545454545454546,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "0010",
+            "n_samples": 22,
+            "exact_match": 0.9545454545454546,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "0100",
+            "n_samples": 22,
+            "exact_match": 0.9545454545454546,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "1000",
+            "n_samples": 22,
+            "exact_match": 1.0,
+            "n_artifacts": 1
+          }
+        ],
+        "cross_label_confusion": [
+          {
+            "present": "ring",
+            "falsely_predicted": "beam_hardening",
+            "n": 22,
+            "false_rate": 0.045454545454545456,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "ring",
+            "n": 22,
+            "false_rate": 0.045454545454545456,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "beam_hardening",
+            "n": 22,
+            "false_rate": 0.045454545454545456,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "ring",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "metal",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "scatter",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "metal",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "scatter",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "beam_hardening",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "scatter",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "ring",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "metal",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          }
+        ]
+      },
+      "single_only": {
+        "per_label": {
+          "beam_hardening": {
+            "precision": 0.9166666666666666,
+            "recall": 1.0,
+            "f1": 0.9565217391304348,
+            "support": 22,
+            "auroc": 1.0
+          },
+          "ring": {
+            "precision": 0.9565217391304348,
+            "recall": 1.0,
+            "f1": 0.9777777777777777,
+            "support": 22,
+            "auroc": 1.0
+          },
+          "metal": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 22,
+            "auroc": 1.0
+          },
+          "scatter": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 22,
+            "auroc": 1.0
+          }
+        },
+        "macro_f1": 0.9835748792270531,
+        "micro_f1": 0.9832402234636871,
+        "exact_match": 0.9659090909090909,
+        "hamming_loss": 0.008522727272727272,
+        "n": 88,
+        "macro_auroc": 1.0,
+        "by_n_artifacts": [
+          {
+            "n_artifacts": 1,
+            "n_samples": 88,
+            "exact_match": 0.9659090909090909,
+            "hamming": 0.008522727272727272
+          }
+        ],
+        "per_combination": [
+          {
+            "combo": "0001",
+            "n_samples": 22,
+            "exact_match": 0.9545454545454546,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "0010",
+            "n_samples": 22,
+            "exact_match": 0.9545454545454546,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "0100",
+            "n_samples": 22,
+            "exact_match": 0.9545454545454546,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "1000",
+            "n_samples": 22,
+            "exact_match": 1.0,
+            "n_artifacts": 1
+          }
+        ],
+        "cross_label_confusion": [
+          {
+            "present": "ring",
+            "falsely_predicted": "beam_hardening",
+            "n": 22,
+            "false_rate": 0.045454545454545456,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "ring",
+            "n": 22,
+            "false_rate": 0.045454545454545456,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "beam_hardening",
+            "n": 22,
+            "false_rate": 0.045454545454545456,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "ring",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "metal",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "scatter",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "metal",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "scatter",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "beam_hardening",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "scatter",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "ring",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "metal",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          }
+        ]
+      },
+      "multi_artifact": {
+        "per_label": {
+          "beam_hardening": {
+            "precision": 0.95625,
+            "recall": 1.0,
+            "f1": 0.9776357827476039,
+            "support": 153,
+            "auroc": 0.9946441539578794
+          },
+          "ring": {
+            "precision": 0.9935064935064936,
+            "recall": 1.0,
+            "f1": 0.996742671009772,
+            "support": 153,
+            "auroc": 1.0
+          },
+          "metal": {
+            "precision": 0.9870967741935484,
+            "recall": 1.0,
+            "f1": 0.9935064935064936,
+            "support": 153,
+            "auroc": 0.9997276688453159
+          },
+          "scatter": {
+            "precision": 0.9935064935064936,
+            "recall": 1.0,
+            "f1": 0.996742671009772,
+            "support": 153,
+            "auroc": 1.0
+          }
+        },
+        "macro_f1": 0.9911569045684103,
+        "micro_f1": 0.9910931174089069,
+        "exact_match": 0.9511111111111111,
+        "hamming_loss": 0.012222222222222223,
+        "n": 225,
+        "macro_auroc": 0.9985929557007989,
+        "by_n_artifacts": [
+          {
+            "n_artifacts": 2,
+            "n_samples": 108,
+            "exact_match": 0.9351851851851852,
+            "hamming": 0.016203703703703703
+          },
+          {
+            "n_artifacts": 3,
+            "n_samples": 72,
+            "exact_match": 0.9444444444444444,
+            "hamming": 0.013888888888888888
+          },
+          {
+            "n_artifacts": 4,
+            "n_samples": 45,
+            "exact_match": 1.0,
+            "hamming": 0.0
+          }
+        ],
+        "per_combination": [
+          {
+            "combo": "0011",
+            "n_samples": 18,
+            "exact_match": 0.8333333333333334,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "0101",
+            "n_samples": 18,
+            "exact_match": 0.8333333333333334,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "0110",
+            "n_samples": 18,
+            "exact_match": 1.0,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "1001",
+            "n_samples": 18,
+            "exact_match": 1.0,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "1010",
+            "n_samples": 18,
+            "exact_match": 1.0,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "1100",
+            "n_samples": 18,
+            "exact_match": 0.9444444444444444,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "0111",
+            "n_samples": 18,
+            "exact_match": 0.8888888888888888,
+            "n_artifacts": 3
+          },
+          {
+            "combo": "1011",
+            "n_samples": 18,
+            "exact_match": 1.0,
+            "n_artifacts": 3
+          },
+          {
+            "combo": "1101",
+            "n_samples": 18,
+            "exact_match": 0.9444444444444444,
+            "n_artifacts": 3
+          },
+          {
+            "combo": "1110",
+            "n_samples": 18,
+            "exact_match": 0.9444444444444444,
+            "n_artifacts": 3
+          },
+          {
+            "combo": "1111",
+            "n_samples": 45,
+            "exact_match": 1.0,
+            "n_artifacts": 4
+          }
+        ],
+        "cross_label_confusion": [
+          {
+            "present": "scatter",
+            "falsely_predicted": "beam_hardening",
+            "n": 54,
+            "false_rate": 0.12962962962962962,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "beam_hardening",
+            "n": 54,
+            "false_rate": 0.09259259259259259,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "beam_hardening",
+            "n": 54,
+            "false_rate": 0.07407407407407407,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "metal",
+            "n": 54,
+            "false_rate": 0.037037037037037035,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "metal",
+            "n": 54,
+            "false_rate": 0.037037037037037035,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "scatter",
+            "n": 54,
+            "false_rate": 0.018518518518518517,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "scatter",
+            "n": 54,
+            "false_rate": 0.018518518518518517,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "ring",
+            "n": 54,
+            "false_rate": 0.018518518518518517,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "scatter",
+            "n": 54,
+            "false_rate": 0.018518518518518517,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "ring",
+            "n": 54,
+            "false_rate": 0.018518518518518517,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "metal",
+            "n": 54,
+            "false_rate": 0.018518518518518517,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "ring",
+            "n": 54,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          }
+        ]
+      },
+      "all": {
+        "per_label": {
+          "beam_hardening": {
+            "precision": 0.9510869565217391,
+            "recall": 1.0,
+            "f1": 0.9749303621169917,
+            "support": 175,
+            "auroc": 0.9978142076502732
+          },
+          "ring": {
+            "precision": 0.9887005649717514,
+            "recall": 1.0,
+            "f1": 0.9943181818181818,
+            "support": 175,
+            "auroc": 1.0
+          },
+          "metal": {
+            "precision": 0.9887005649717514,
+            "recall": 1.0,
+            "f1": 0.9943181818181818,
+            "support": 175,
+            "auroc": 0.9999063231850117
+          },
+          "scatter": {
+            "precision": 0.9943181818181818,
+            "recall": 1.0,
+            "f1": 0.9971509971509972,
+            "support": 175,
+            "auroc": 1.0
+          }
+        },
+        "macro_f1": 0.9901794307260882,
+        "micro_f1": 0.9900990099009901,
+        "exact_match": 0.9608938547486033,
+        "hamming_loss": 0.009776536312849162,
+        "n": 358,
+        "macro_auroc": 0.9994301327088212,
+        "by_n_artifacts": [
+          {
+            "n_artifacts": 0,
+            "n_samples": 45,
+            "exact_match": 1.0,
+            "hamming": 0.0
+          },
+          {
+            "n_artifacts": 1,
+            "n_samples": 88,
+            "exact_match": 0.9659090909090909,
+            "hamming": 0.008522727272727272
+          },
+          {
+            "n_artifacts": 2,
+            "n_samples": 108,
+            "exact_match": 0.9351851851851852,
+            "hamming": 0.016203703703703703
+          },
+          {
+            "n_artifacts": 3,
+            "n_samples": 72,
+            "exact_match": 0.9444444444444444,
+            "hamming": 0.013888888888888888
+          },
+          {
+            "n_artifacts": 4,
+            "n_samples": 45,
+            "exact_match": 1.0,
+            "hamming": 0.0
+          }
+        ],
+        "per_combination": [
+          {
+            "combo": "0000",
+            "n_samples": 45,
+            "exact_match": 1.0,
+            "n_artifacts": 0
+          },
+          {
+            "combo": "0001",
+            "n_samples": 22,
+            "exact_match": 0.9545454545454546,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "0010",
+            "n_samples": 22,
+            "exact_match": 0.9545454545454546,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "0100",
+            "n_samples": 22,
+            "exact_match": 0.9545454545454546,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "1000",
+            "n_samples": 22,
+            "exact_match": 1.0,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "0011",
+            "n_samples": 18,
+            "exact_match": 0.8333333333333334,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "0101",
+            "n_samples": 18,
+            "exact_match": 0.8333333333333334,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "0110",
+            "n_samples": 18,
+            "exact_match": 1.0,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "1001",
+            "n_samples": 18,
+            "exact_match": 1.0,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "1010",
+            "n_samples": 18,
+            "exact_match": 1.0,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "1100",
+            "n_samples": 18,
+            "exact_match": 0.9444444444444444,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "0111",
+            "n_samples": 18,
+            "exact_match": 0.8888888888888888,
+            "n_artifacts": 3
+          },
+          {
+            "combo": "1011",
+            "n_samples": 18,
+            "exact_match": 1.0,
+            "n_artifacts": 3
+          },
+          {
+            "combo": "1101",
+            "n_samples": 18,
+            "exact_match": 0.9444444444444444,
+            "n_artifacts": 3
+          },
+          {
+            "combo": "1110",
+            "n_samples": 18,
+            "exact_match": 0.9444444444444444,
+            "n_artifacts": 3
+          },
+          {
+            "combo": "1111",
+            "n_samples": 45,
+            "exact_match": 1.0,
+            "n_artifacts": 4
+          }
+        ],
+        "cross_label_confusion": [
+          {
+            "present": "scatter",
+            "falsely_predicted": "beam_hardening",
+            "n": 76,
+            "false_rate": 0.10526315789473684,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "beam_hardening",
+            "n": 76,
+            "false_rate": 0.07894736842105263,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "beam_hardening",
+            "n": 76,
+            "false_rate": 0.05263157894736842,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "metal",
+            "n": 76,
+            "false_rate": 0.02631578947368421,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "metal",
+            "n": 76,
+            "false_rate": 0.02631578947368421,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "ring",
+            "n": 76,
+            "false_rate": 0.02631578947368421,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "scatter",
+            "n": 76,
+            "false_rate": 0.013157894736842105,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "scatter",
+            "n": 76,
+            "false_rate": 0.013157894736842105,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "scatter",
+            "n": 76,
+            "false_rate": 0.013157894736842105,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "ring",
+            "n": 76,
+            "false_rate": 0.013157894736842105,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "metal",
+            "n": 76,
+            "false_rate": 0.013157894736842105,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "ring",
+            "n": 76,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          }
+        ]
+      },
+      "clean_only": {
+        "per_label": {
+          "beam_hardening": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0,
+            "auroc": NaN
+          },
+          "ring": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0,
+            "auroc": NaN
+          },
+          "metal": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0,
+            "auroc": NaN
+          },
+          "scatter": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0,
+            "auroc": NaN
+          }
+        },
+        "macro_f1": 0.0,
+        "micro_f1": 0.0,
+        "exact_match": 1.0,
+        "hamming_loss": 0.0,
+        "n": 45,
+        "macro_auroc": NaN,
+        "by_n_artifacts": [
+          {
+            "n_artifacts": 0,
+            "n_samples": 45,
+            "exact_match": 1.0,
+            "hamming": 0.0
+          }
+        ],
+        "per_combination": [
+          {
+            "combo": "0000",
+            "n_samples": 45,
+            "exact_match": 1.0,
+            "n_artifacts": 0
+          }
+        ],
+        "cross_label_confusion": []
+      }
+    },
+    "slices_full_val_thresholds": {
+      "single_or_clean": {
+        "per_label": {
+          "beam_hardening": {
+            "precision": 0.9166666666666666,
+            "recall": 1.0,
+            "f1": 0.9565217391304348,
+            "support": 22,
+            "auroc": 1.0
+          },
+          "ring": {
+            "precision": 0.9565217391304348,
+            "recall": 1.0,
+            "f1": 0.9777777777777777,
+            "support": 22,
+            "auroc": 1.0
+          },
+          "metal": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 22,
+            "auroc": 1.0
+          },
+          "scatter": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 22,
+            "auroc": 1.0
+          }
+        },
+        "macro_f1": 0.9835748792270531,
+        "micro_f1": 0.9832402234636871,
+        "exact_match": 0.9774436090225563,
+        "hamming_loss": 0.005639097744360902,
+        "n": 133,
+        "macro_auroc": 1.0,
+        "by_n_artifacts": [
+          {
+            "n_artifacts": 0,
+            "n_samples": 45,
+            "exact_match": 1.0,
+            "hamming": 0.0
+          },
+          {
+            "n_artifacts": 1,
+            "n_samples": 88,
+            "exact_match": 0.9659090909090909,
+            "hamming": 0.008522727272727272
+          }
+        ],
+        "per_combination": [
+          {
+            "combo": "0000",
+            "n_samples": 45,
+            "exact_match": 1.0,
+            "n_artifacts": 0
+          },
+          {
+            "combo": "0001",
+            "n_samples": 22,
+            "exact_match": 0.9545454545454546,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "0010",
+            "n_samples": 22,
+            "exact_match": 0.9545454545454546,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "0100",
+            "n_samples": 22,
+            "exact_match": 0.9545454545454546,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "1000",
+            "n_samples": 22,
+            "exact_match": 1.0,
+            "n_artifacts": 1
+          }
+        ],
+        "cross_label_confusion": [
+          {
+            "present": "ring",
+            "falsely_predicted": "beam_hardening",
+            "n": 22,
+            "false_rate": 0.045454545454545456,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "ring",
+            "n": 22,
+            "false_rate": 0.045454545454545456,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "beam_hardening",
+            "n": 22,
+            "false_rate": 0.045454545454545456,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "ring",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "metal",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "scatter",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "metal",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "scatter",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "beam_hardening",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "scatter",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "ring",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "metal",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          }
+        ]
+      },
+      "single_only": {
+        "per_label": {
+          "beam_hardening": {
+            "precision": 0.9166666666666666,
+            "recall": 1.0,
+            "f1": 0.9565217391304348,
+            "support": 22,
+            "auroc": 1.0
+          },
+          "ring": {
+            "precision": 0.9565217391304348,
+            "recall": 1.0,
+            "f1": 0.9777777777777777,
+            "support": 22,
+            "auroc": 1.0
+          },
+          "metal": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 22,
+            "auroc": 1.0
+          },
+          "scatter": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 22,
+            "auroc": 1.0
+          }
+        },
+        "macro_f1": 0.9835748792270531,
+        "micro_f1": 0.9832402234636871,
+        "exact_match": 0.9659090909090909,
+        "hamming_loss": 0.008522727272727272,
+        "n": 88,
+        "macro_auroc": 1.0,
+        "by_n_artifacts": [
+          {
+            "n_artifacts": 1,
+            "n_samples": 88,
+            "exact_match": 0.9659090909090909,
+            "hamming": 0.008522727272727272
+          }
+        ],
+        "per_combination": [
+          {
+            "combo": "0001",
+            "n_samples": 22,
+            "exact_match": 0.9545454545454546,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "0010",
+            "n_samples": 22,
+            "exact_match": 0.9545454545454546,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "0100",
+            "n_samples": 22,
+            "exact_match": 0.9545454545454546,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "1000",
+            "n_samples": 22,
+            "exact_match": 1.0,
+            "n_artifacts": 1
+          }
+        ],
+        "cross_label_confusion": [
+          {
+            "present": "ring",
+            "falsely_predicted": "beam_hardening",
+            "n": 22,
+            "false_rate": 0.045454545454545456,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "ring",
+            "n": 22,
+            "false_rate": 0.045454545454545456,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "beam_hardening",
+            "n": 22,
+            "false_rate": 0.045454545454545456,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "ring",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "metal",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "scatter",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "metal",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "scatter",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "beam_hardening",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "scatter",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "ring",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "metal",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          }
+        ]
+      },
+      "multi_artifact": {
+        "per_label": {
+          "beam_hardening": {
+            "precision": 0.95625,
+            "recall": 1.0,
+            "f1": 0.9776357827476039,
+            "support": 153,
+            "auroc": 0.9946441539578794
+          },
+          "ring": {
+            "precision": 0.9935064935064936,
+            "recall": 1.0,
+            "f1": 0.996742671009772,
+            "support": 153,
+            "auroc": 1.0
+          },
+          "metal": {
+            "precision": 0.9870967741935484,
+            "recall": 1.0,
+            "f1": 0.9935064935064936,
+            "support": 153,
+            "auroc": 0.9997276688453159
+          },
+          "scatter": {
+            "precision": 0.9935064935064936,
+            "recall": 1.0,
+            "f1": 0.996742671009772,
+            "support": 153,
+            "auroc": 1.0
+          }
+        },
+        "macro_f1": 0.9911569045684103,
+        "micro_f1": 0.9910931174089069,
+        "exact_match": 0.9511111111111111,
+        "hamming_loss": 0.012222222222222223,
+        "n": 225,
+        "macro_auroc": 0.9985929557007989,
+        "by_n_artifacts": [
+          {
+            "n_artifacts": 2,
+            "n_samples": 108,
+            "exact_match": 0.9351851851851852,
+            "hamming": 0.016203703703703703
+          },
+          {
+            "n_artifacts": 3,
+            "n_samples": 72,
+            "exact_match": 0.9444444444444444,
+            "hamming": 0.013888888888888888
+          },
+          {
+            "n_artifacts": 4,
+            "n_samples": 45,
+            "exact_match": 1.0,
+            "hamming": 0.0
+          }
+        ],
+        "per_combination": [
+          {
+            "combo": "0011",
+            "n_samples": 18,
+            "exact_match": 0.8333333333333334,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "0101",
+            "n_samples": 18,
+            "exact_match": 0.8333333333333334,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "0110",
+            "n_samples": 18,
+            "exact_match": 1.0,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "1001",
+            "n_samples": 18,
+            "exact_match": 1.0,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "1010",
+            "n_samples": 18,
+            "exact_match": 1.0,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "1100",
+            "n_samples": 18,
+            "exact_match": 0.9444444444444444,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "0111",
+            "n_samples": 18,
+            "exact_match": 0.8888888888888888,
+            "n_artifacts": 3
+          },
+          {
+            "combo": "1011",
+            "n_samples": 18,
+            "exact_match": 1.0,
+            "n_artifacts": 3
+          },
+          {
+            "combo": "1101",
+            "n_samples": 18,
+            "exact_match": 0.9444444444444444,
+            "n_artifacts": 3
+          },
+          {
+            "combo": "1110",
+            "n_samples": 18,
+            "exact_match": 0.9444444444444444,
+            "n_artifacts": 3
+          },
+          {
+            "combo": "1111",
+            "n_samples": 45,
+            "exact_match": 1.0,
+            "n_artifacts": 4
+          }
+        ],
+        "cross_label_confusion": [
+          {
+            "present": "scatter",
+            "falsely_predicted": "beam_hardening",
+            "n": 54,
+            "false_rate": 0.12962962962962962,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "beam_hardening",
+            "n": 54,
+            "false_rate": 0.09259259259259259,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "beam_hardening",
+            "n": 54,
+            "false_rate": 0.07407407407407407,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "metal",
+            "n": 54,
+            "false_rate": 0.037037037037037035,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "metal",
+            "n": 54,
+            "false_rate": 0.037037037037037035,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "scatter",
+            "n": 54,
+            "false_rate": 0.018518518518518517,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "scatter",
+            "n": 54,
+            "false_rate": 0.018518518518518517,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "ring",
+            "n": 54,
+            "false_rate": 0.018518518518518517,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "scatter",
+            "n": 54,
+            "false_rate": 0.018518518518518517,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "ring",
+            "n": 54,
+            "false_rate": 0.018518518518518517,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "metal",
+            "n": 54,
+            "false_rate": 0.018518518518518517,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "ring",
+            "n": 54,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          }
+        ]
+      },
+      "all": {
+        "per_label": {
+          "beam_hardening": {
+            "precision": 0.9510869565217391,
+            "recall": 1.0,
+            "f1": 0.9749303621169917,
+            "support": 175,
+            "auroc": 0.9978142076502732
+          },
+          "ring": {
+            "precision": 0.9887005649717514,
+            "recall": 1.0,
+            "f1": 0.9943181818181818,
+            "support": 175,
+            "auroc": 1.0
+          },
+          "metal": {
+            "precision": 0.9887005649717514,
+            "recall": 1.0,
+            "f1": 0.9943181818181818,
+            "support": 175,
+            "auroc": 0.9999063231850117
+          },
+          "scatter": {
+            "precision": 0.9943181818181818,
+            "recall": 1.0,
+            "f1": 0.9971509971509972,
+            "support": 175,
+            "auroc": 1.0
+          }
+        },
+        "macro_f1": 0.9901794307260882,
+        "micro_f1": 0.9900990099009901,
+        "exact_match": 0.9608938547486033,
+        "hamming_loss": 0.009776536312849162,
+        "n": 358,
+        "macro_auroc": 0.9994301327088212,
+        "by_n_artifacts": [
+          {
+            "n_artifacts": 0,
+            "n_samples": 45,
+            "exact_match": 1.0,
+            "hamming": 0.0
+          },
+          {
+            "n_artifacts": 1,
+            "n_samples": 88,
+            "exact_match": 0.9659090909090909,
+            "hamming": 0.008522727272727272
+          },
+          {
+            "n_artifacts": 2,
+            "n_samples": 108,
+            "exact_match": 0.9351851851851852,
+            "hamming": 0.016203703703703703
+          },
+          {
+            "n_artifacts": 3,
+            "n_samples": 72,
+            "exact_match": 0.9444444444444444,
+            "hamming": 0.013888888888888888
+          },
+          {
+            "n_artifacts": 4,
+            "n_samples": 45,
+            "exact_match": 1.0,
+            "hamming": 0.0
+          }
+        ],
+        "per_combination": [
+          {
+            "combo": "0000",
+            "n_samples": 45,
+            "exact_match": 1.0,
+            "n_artifacts": 0
+          },
+          {
+            "combo": "0001",
+            "n_samples": 22,
+            "exact_match": 0.9545454545454546,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "0010",
+            "n_samples": 22,
+            "exact_match": 0.9545454545454546,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "0100",
+            "n_samples": 22,
+            "exact_match": 0.9545454545454546,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "1000",
+            "n_samples": 22,
+            "exact_match": 1.0,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "0011",
+            "n_samples": 18,
+            "exact_match": 0.8333333333333334,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "0101",
+            "n_samples": 18,
+            "exact_match": 0.8333333333333334,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "0110",
+            "n_samples": 18,
+            "exact_match": 1.0,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "1001",
+            "n_samples": 18,
+            "exact_match": 1.0,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "1010",
+            "n_samples": 18,
+            "exact_match": 1.0,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "1100",
+            "n_samples": 18,
+            "exact_match": 0.9444444444444444,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "0111",
+            "n_samples": 18,
+            "exact_match": 0.8888888888888888,
+            "n_artifacts": 3
+          },
+          {
+            "combo": "1011",
+            "n_samples": 18,
+            "exact_match": 1.0,
+            "n_artifacts": 3
+          },
+          {
+            "combo": "1101",
+            "n_samples": 18,
+            "exact_match": 0.9444444444444444,
+            "n_artifacts": 3
+          },
+          {
+            "combo": "1110",
+            "n_samples": 18,
+            "exact_match": 0.9444444444444444,
+            "n_artifacts": 3
+          },
+          {
+            "combo": "1111",
+            "n_samples": 45,
+            "exact_match": 1.0,
+            "n_artifacts": 4
+          }
+        ],
+        "cross_label_confusion": [
+          {
+            "present": "scatter",
+            "falsely_predicted": "beam_hardening",
+            "n": 76,
+            "false_rate": 0.10526315789473684,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "beam_hardening",
+            "n": 76,
+            "false_rate": 0.07894736842105263,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "beam_hardening",
+            "n": 76,
+            "false_rate": 0.05263157894736842,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "metal",
+            "n": 76,
+            "false_rate": 0.02631578947368421,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "metal",
+            "n": 76,
+            "false_rate": 0.02631578947368421,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "ring",
+            "n": 76,
+            "false_rate": 0.02631578947368421,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "scatter",
+            "n": 76,
+            "false_rate": 0.013157894736842105,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "scatter",
+            "n": 76,
+            "false_rate": 0.013157894736842105,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "scatter",
+            "n": 76,
+            "false_rate": 0.013157894736842105,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "ring",
+            "n": 76,
+            "false_rate": 0.013157894736842105,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "metal",
+            "n": 76,
+            "false_rate": 0.013157894736842105,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "ring",
+            "n": 76,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          }
+        ]
+      },
+      "clean_only": {
+        "per_label": {
+          "beam_hardening": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0,
+            "auroc": NaN
+          },
+          "ring": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0,
+            "auroc": NaN
+          },
+          "metal": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0,
+            "auroc": NaN
+          },
+          "scatter": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0,
+            "auroc": NaN
+          }
+        },
+        "macro_f1": 0.0,
+        "micro_f1": 0.0,
+        "exact_match": 1.0,
+        "hamming_loss": 0.0,
+        "n": 45,
+        "macro_auroc": NaN,
+        "by_n_artifacts": [
+          {
+            "n_artifacts": 0,
+            "n_samples": 45,
+            "exact_match": 1.0,
+            "hamming": 0.0
+          }
+        ],
+        "per_combination": [
+          {
+            "combo": "0000",
+            "n_samples": 45,
+            "exact_match": 1.0,
+            "n_artifacts": 0
+          }
+        ],
+        "cross_label_confusion": []
+      }
+    },
+    "thresholds": [
+      0.38,
+      0.06,
+      0.58,
+      0.04
+    ],
+    "thresholds_full_val": [
+      0.38,
+      0.06,
+      0.58,
+      0.04
+    ]
+  },
+  "C_combined_full": {
+    "description": "full combined dataset, n=1680",
+    "n_train": 1680,
+    "best_epoch": -1,
+    "seconds": 0.0,
+    "slices": {
+      "single_or_clean": {
+        "per_label": {
+          "beam_hardening": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 22,
+            "auroc": 1.0
+          },
+          "ring": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 22,
+            "auroc": 1.0
+          },
+          "metal": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 22,
+            "auroc": 1.0
+          },
+          "scatter": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 22,
+            "auroc": 1.0
+          }
+        },
+        "macro_f1": 1.0,
+        "micro_f1": 1.0,
+        "exact_match": 1.0,
+        "hamming_loss": 0.0,
+        "n": 133,
+        "macro_auroc": 1.0,
+        "by_n_artifacts": [
+          {
+            "n_artifacts": 0,
+            "n_samples": 45,
+            "exact_match": 1.0,
+            "hamming": 0.0
+          },
+          {
+            "n_artifacts": 1,
+            "n_samples": 88,
+            "exact_match": 1.0,
+            "hamming": 0.0
+          }
+        ],
+        "per_combination": [
+          {
+            "combo": "0000",
+            "n_samples": 45,
+            "exact_match": 1.0,
+            "n_artifacts": 0
+          },
+          {
+            "combo": "0001",
+            "n_samples": 22,
+            "exact_match": 1.0,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "0010",
+            "n_samples": 22,
+            "exact_match": 1.0,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "0100",
+            "n_samples": 22,
+            "exact_match": 1.0,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "1000",
+            "n_samples": 22,
+            "exact_match": 1.0,
+            "n_artifacts": 1
+          }
+        ],
+        "cross_label_confusion": [
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "ring",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "metal",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "scatter",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "beam_hardening",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "metal",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "scatter",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "beam_hardening",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "ring",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "scatter",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "beam_hardening",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "ring",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "metal",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          }
+        ]
+      },
+      "single_only": {
+        "per_label": {
+          "beam_hardening": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 22,
+            "auroc": 1.0
+          },
+          "ring": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 22,
+            "auroc": 1.0
+          },
+          "metal": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 22,
+            "auroc": 1.0
+          },
+          "scatter": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 22,
+            "auroc": 1.0
+          }
+        },
+        "macro_f1": 1.0,
+        "micro_f1": 1.0,
+        "exact_match": 1.0,
+        "hamming_loss": 0.0,
+        "n": 88,
+        "macro_auroc": 1.0,
+        "by_n_artifacts": [
+          {
+            "n_artifacts": 1,
+            "n_samples": 88,
+            "exact_match": 1.0,
+            "hamming": 0.0
+          }
+        ],
+        "per_combination": [
+          {
+            "combo": "0001",
+            "n_samples": 22,
+            "exact_match": 1.0,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "0010",
+            "n_samples": 22,
+            "exact_match": 1.0,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "0100",
+            "n_samples": 22,
+            "exact_match": 1.0,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "1000",
+            "n_samples": 22,
+            "exact_match": 1.0,
+            "n_artifacts": 1
+          }
+        ],
+        "cross_label_confusion": [
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "ring",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "metal",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "scatter",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "beam_hardening",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "metal",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "scatter",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "beam_hardening",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "ring",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "scatter",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "beam_hardening",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "ring",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "metal",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          }
+        ]
+      },
+      "multi_artifact": {
+        "per_label": {
+          "beam_hardening": {
+            "precision": 0.9683544303797469,
+            "recall": 1.0,
+            "f1": 0.9839228295819936,
+            "support": 153,
+            "auroc": 0.9980936819172113
+          },
+          "ring": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 153,
+            "auroc": 1.0
+          },
+          "metal": {
+            "precision": 0.9870967741935484,
+            "recall": 1.0,
+            "f1": 0.9935064935064936,
+            "support": 153,
+            "auroc": 0.9999092229484386
+          },
+          "scatter": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 153,
+            "auroc": 1.0
+          }
+        },
+        "macro_f1": 0.9943573307721217,
+        "micro_f1": 0.9943135662063363,
+        "exact_match": 0.9688888888888889,
+        "hamming_loss": 0.0077777777777777776,
+        "n": 225,
+        "macro_auroc": 0.9995007262164125,
+        "by_n_artifacts": [
+          {
+            "n_artifacts": 2,
+            "n_samples": 108,
+            "exact_match": 0.9629629629629629,
+            "hamming": 0.009259259259259259
+          },
+          {
+            "n_artifacts": 3,
+            "n_samples": 72,
+            "exact_match": 0.9583333333333334,
+            "hamming": 0.010416666666666666
+          },
+          {
+            "n_artifacts": 4,
+            "n_samples": 45,
+            "exact_match": 1.0,
+            "hamming": 0.0
+          }
+        ],
+        "per_combination": [
+          {
+            "combo": "0011",
+            "n_samples": 18,
+            "exact_match": 1.0,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "0101",
+            "n_samples": 18,
+            "exact_match": 0.8888888888888888,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "0110",
+            "n_samples": 18,
+            "exact_match": 1.0,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "1001",
+            "n_samples": 18,
+            "exact_match": 1.0,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "1010",
+            "n_samples": 18,
+            "exact_match": 1.0,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "1100",
+            "n_samples": 18,
+            "exact_match": 0.8888888888888888,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "0111",
+            "n_samples": 18,
+            "exact_match": 0.8333333333333334,
+            "n_artifacts": 3
+          },
+          {
+            "combo": "1011",
+            "n_samples": 18,
+            "exact_match": 1.0,
+            "n_artifacts": 3
+          },
+          {
+            "combo": "1101",
+            "n_samples": 18,
+            "exact_match": 1.0,
+            "n_artifacts": 3
+          },
+          {
+            "combo": "1110",
+            "n_samples": 18,
+            "exact_match": 1.0,
+            "n_artifacts": 3
+          },
+          {
+            "combo": "1111",
+            "n_samples": 45,
+            "exact_match": 1.0,
+            "n_artifacts": 4
+          }
+        ],
+        "cross_label_confusion": [
+          {
+            "present": "ring",
+            "falsely_predicted": "beam_hardening",
+            "n": 54,
+            "false_rate": 0.09259259259259259,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "beam_hardening",
+            "n": 54,
+            "false_rate": 0.09259259259259259,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "beam_hardening",
+            "n": 54,
+            "false_rate": 0.05555555555555555,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "metal",
+            "n": 54,
+            "false_rate": 0.037037037037037035,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "metal",
+            "n": 54,
+            "false_rate": 0.037037037037037035,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "ring",
+            "n": 54,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "scatter",
+            "n": 54,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "scatter",
+            "n": 54,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "ring",
+            "n": 54,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "scatter",
+            "n": 54,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "ring",
+            "n": 54,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "metal",
+            "n": 54,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          }
+        ]
+      },
+      "all": {
+        "per_label": {
+          "beam_hardening": {
+            "precision": 0.9722222222222222,
+            "recall": 1.0,
+            "f1": 0.9859154929577465,
+            "support": 175,
+            "auroc": 0.9992505854800936
+          },
+          "ring": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 175,
+            "auroc": 1.0
+          },
+          "metal": {
+            "precision": 0.9887005649717514,
+            "recall": 1.0,
+            "f1": 0.9943181818181818,
+            "support": 175,
+            "auroc": 0.9999687743950039
+          },
+          "scatter": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 175,
+            "auroc": 1.0
+          }
+        },
+        "macro_f1": 0.995058418693982,
+        "micro_f1": 0.9950248756218906,
+        "exact_match": 0.9804469273743017,
+        "hamming_loss": 0.004888268156424581,
+        "n": 358,
+        "macro_auroc": 0.9998048399687745,
+        "by_n_artifacts": [
+          {
+            "n_artifacts": 0,
+            "n_samples": 45,
+            "exact_match": 1.0,
+            "hamming": 0.0
+          },
+          {
+            "n_artifacts": 1,
+            "n_samples": 88,
+            "exact_match": 1.0,
+            "hamming": 0.0
+          },
+          {
+            "n_artifacts": 2,
+            "n_samples": 108,
+            "exact_match": 0.9629629629629629,
+            "hamming": 0.009259259259259259
+          },
+          {
+            "n_artifacts": 3,
+            "n_samples": 72,
+            "exact_match": 0.9583333333333334,
+            "hamming": 0.010416666666666666
+          },
+          {
+            "n_artifacts": 4,
+            "n_samples": 45,
+            "exact_match": 1.0,
+            "hamming": 0.0
+          }
+        ],
+        "per_combination": [
+          {
+            "combo": "0000",
+            "n_samples": 45,
+            "exact_match": 1.0,
+            "n_artifacts": 0
+          },
+          {
+            "combo": "0001",
+            "n_samples": 22,
+            "exact_match": 1.0,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "0010",
+            "n_samples": 22,
+            "exact_match": 1.0,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "0100",
+            "n_samples": 22,
+            "exact_match": 1.0,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "1000",
+            "n_samples": 22,
+            "exact_match": 1.0,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "0011",
+            "n_samples": 18,
+            "exact_match": 1.0,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "0101",
+            "n_samples": 18,
+            "exact_match": 0.8888888888888888,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "0110",
+            "n_samples": 18,
+            "exact_match": 1.0,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "1001",
+            "n_samples": 18,
+            "exact_match": 1.0,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "1010",
+            "n_samples": 18,
+            "exact_match": 1.0,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "1100",
+            "n_samples": 18,
+            "exact_match": 0.8888888888888888,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "0111",
+            "n_samples": 18,
+            "exact_match": 0.8333333333333334,
+            "n_artifacts": 3
+          },
+          {
+            "combo": "1011",
+            "n_samples": 18,
+            "exact_match": 1.0,
+            "n_artifacts": 3
+          },
+          {
+            "combo": "1101",
+            "n_samples": 18,
+            "exact_match": 1.0,
+            "n_artifacts": 3
+          },
+          {
+            "combo": "1110",
+            "n_samples": 18,
+            "exact_match": 1.0,
+            "n_artifacts": 3
+          },
+          {
+            "combo": "1111",
+            "n_samples": 45,
+            "exact_match": 1.0,
+            "n_artifacts": 4
+          }
+        ],
+        "cross_label_confusion": [
+          {
+            "present": "ring",
+            "falsely_predicted": "beam_hardening",
+            "n": 76,
+            "false_rate": 0.06578947368421052,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "beam_hardening",
+            "n": 76,
+            "false_rate": 0.06578947368421052,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "beam_hardening",
+            "n": 76,
+            "false_rate": 0.039473684210526314,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "metal",
+            "n": 76,
+            "false_rate": 0.02631578947368421,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "metal",
+            "n": 76,
+            "false_rate": 0.02631578947368421,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "ring",
+            "n": 76,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "scatter",
+            "n": 76,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "scatter",
+            "n": 76,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "ring",
+            "n": 76,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "scatter",
+            "n": 76,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "ring",
+            "n": 76,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "metal",
+            "n": 76,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          }
+        ]
+      },
+      "clean_only": {
+        "per_label": {
+          "beam_hardening": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0,
+            "auroc": NaN
+          },
+          "ring": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0,
+            "auroc": NaN
+          },
+          "metal": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0,
+            "auroc": NaN
+          },
+          "scatter": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0,
+            "auroc": NaN
+          }
+        },
+        "macro_f1": 0.0,
+        "micro_f1": 0.0,
+        "exact_match": 1.0,
+        "hamming_loss": 0.0,
+        "n": 45,
+        "macro_auroc": NaN,
+        "by_n_artifacts": [
+          {
+            "n_artifacts": 0,
+            "n_samples": 45,
+            "exact_match": 1.0,
+            "hamming": 0.0
+          }
+        ],
+        "per_combination": [
+          {
+            "combo": "0000",
+            "n_samples": 45,
+            "exact_match": 1.0,
+            "n_artifacts": 0
+          }
+        ],
+        "cross_label_confusion": []
+      }
+    },
+    "slices_full_val_thresholds": {
+      "single_or_clean": {
+        "per_label": {
+          "beam_hardening": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 22,
+            "auroc": 1.0
+          },
+          "ring": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 22,
+            "auroc": 1.0
+          },
+          "metal": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 22,
+            "auroc": 1.0
+          },
+          "scatter": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 22,
+            "auroc": 1.0
+          }
+        },
+        "macro_f1": 1.0,
+        "micro_f1": 1.0,
+        "exact_match": 1.0,
+        "hamming_loss": 0.0,
+        "n": 133,
+        "macro_auroc": 1.0,
+        "by_n_artifacts": [
+          {
+            "n_artifacts": 0,
+            "n_samples": 45,
+            "exact_match": 1.0,
+            "hamming": 0.0
+          },
+          {
+            "n_artifacts": 1,
+            "n_samples": 88,
+            "exact_match": 1.0,
+            "hamming": 0.0
+          }
+        ],
+        "per_combination": [
+          {
+            "combo": "0000",
+            "n_samples": 45,
+            "exact_match": 1.0,
+            "n_artifacts": 0
+          },
+          {
+            "combo": "0001",
+            "n_samples": 22,
+            "exact_match": 1.0,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "0010",
+            "n_samples": 22,
+            "exact_match": 1.0,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "0100",
+            "n_samples": 22,
+            "exact_match": 1.0,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "1000",
+            "n_samples": 22,
+            "exact_match": 1.0,
+            "n_artifacts": 1
+          }
+        ],
+        "cross_label_confusion": [
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "ring",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "metal",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "scatter",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "beam_hardening",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "metal",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "scatter",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "beam_hardening",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "ring",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "scatter",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "beam_hardening",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "ring",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "metal",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          }
+        ]
+      },
+      "single_only": {
+        "per_label": {
+          "beam_hardening": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 22,
+            "auroc": 1.0
+          },
+          "ring": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 22,
+            "auroc": 1.0
+          },
+          "metal": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 22,
+            "auroc": 1.0
+          },
+          "scatter": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 22,
+            "auroc": 1.0
+          }
+        },
+        "macro_f1": 1.0,
+        "micro_f1": 1.0,
+        "exact_match": 1.0,
+        "hamming_loss": 0.0,
+        "n": 88,
+        "macro_auroc": 1.0,
+        "by_n_artifacts": [
+          {
+            "n_artifacts": 1,
+            "n_samples": 88,
+            "exact_match": 1.0,
+            "hamming": 0.0
+          }
+        ],
+        "per_combination": [
+          {
+            "combo": "0001",
+            "n_samples": 22,
+            "exact_match": 1.0,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "0010",
+            "n_samples": 22,
+            "exact_match": 1.0,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "0100",
+            "n_samples": 22,
+            "exact_match": 1.0,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "1000",
+            "n_samples": 22,
+            "exact_match": 1.0,
+            "n_artifacts": 1
+          }
+        ],
+        "cross_label_confusion": [
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "ring",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "metal",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "scatter",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "beam_hardening",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "metal",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "scatter",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "beam_hardening",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "ring",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "scatter",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "beam_hardening",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "ring",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "metal",
+            "n": 22,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          }
+        ]
+      },
+      "multi_artifact": {
+        "per_label": {
+          "beam_hardening": {
+            "precision": 0.9683544303797469,
+            "recall": 1.0,
+            "f1": 0.9839228295819936,
+            "support": 153,
+            "auroc": 0.9980936819172113
+          },
+          "ring": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 153,
+            "auroc": 1.0
+          },
+          "metal": {
+            "precision": 0.9870967741935484,
+            "recall": 1.0,
+            "f1": 0.9935064935064936,
+            "support": 153,
+            "auroc": 0.9999092229484386
+          },
+          "scatter": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 153,
+            "auroc": 1.0
+          }
+        },
+        "macro_f1": 0.9943573307721217,
+        "micro_f1": 0.9943135662063363,
+        "exact_match": 0.9688888888888889,
+        "hamming_loss": 0.0077777777777777776,
+        "n": 225,
+        "macro_auroc": 0.9995007262164125,
+        "by_n_artifacts": [
+          {
+            "n_artifacts": 2,
+            "n_samples": 108,
+            "exact_match": 0.9629629629629629,
+            "hamming": 0.009259259259259259
+          },
+          {
+            "n_artifacts": 3,
+            "n_samples": 72,
+            "exact_match": 0.9583333333333334,
+            "hamming": 0.010416666666666666
+          },
+          {
+            "n_artifacts": 4,
+            "n_samples": 45,
+            "exact_match": 1.0,
+            "hamming": 0.0
+          }
+        ],
+        "per_combination": [
+          {
+            "combo": "0011",
+            "n_samples": 18,
+            "exact_match": 1.0,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "0101",
+            "n_samples": 18,
+            "exact_match": 0.8888888888888888,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "0110",
+            "n_samples": 18,
+            "exact_match": 1.0,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "1001",
+            "n_samples": 18,
+            "exact_match": 1.0,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "1010",
+            "n_samples": 18,
+            "exact_match": 1.0,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "1100",
+            "n_samples": 18,
+            "exact_match": 0.8888888888888888,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "0111",
+            "n_samples": 18,
+            "exact_match": 0.8333333333333334,
+            "n_artifacts": 3
+          },
+          {
+            "combo": "1011",
+            "n_samples": 18,
+            "exact_match": 1.0,
+            "n_artifacts": 3
+          },
+          {
+            "combo": "1101",
+            "n_samples": 18,
+            "exact_match": 1.0,
+            "n_artifacts": 3
+          },
+          {
+            "combo": "1110",
+            "n_samples": 18,
+            "exact_match": 1.0,
+            "n_artifacts": 3
+          },
+          {
+            "combo": "1111",
+            "n_samples": 45,
+            "exact_match": 1.0,
+            "n_artifacts": 4
+          }
+        ],
+        "cross_label_confusion": [
+          {
+            "present": "ring",
+            "falsely_predicted": "beam_hardening",
+            "n": 54,
+            "false_rate": 0.09259259259259259,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "beam_hardening",
+            "n": 54,
+            "false_rate": 0.09259259259259259,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "beam_hardening",
+            "n": 54,
+            "false_rate": 0.05555555555555555,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "metal",
+            "n": 54,
+            "false_rate": 0.037037037037037035,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "metal",
+            "n": 54,
+            "false_rate": 0.037037037037037035,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "ring",
+            "n": 54,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "scatter",
+            "n": 54,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "scatter",
+            "n": 54,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "ring",
+            "n": 54,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "scatter",
+            "n": 54,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "ring",
+            "n": 54,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "metal",
+            "n": 54,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          }
+        ]
+      },
+      "all": {
+        "per_label": {
+          "beam_hardening": {
+            "precision": 0.9722222222222222,
+            "recall": 1.0,
+            "f1": 0.9859154929577465,
+            "support": 175,
+            "auroc": 0.9992505854800936
+          },
+          "ring": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 175,
+            "auroc": 1.0
+          },
+          "metal": {
+            "precision": 0.9887005649717514,
+            "recall": 1.0,
+            "f1": 0.9943181818181818,
+            "support": 175,
+            "auroc": 0.9999687743950039
+          },
+          "scatter": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 175,
+            "auroc": 1.0
+          }
+        },
+        "macro_f1": 0.995058418693982,
+        "micro_f1": 0.9950248756218906,
+        "exact_match": 0.9804469273743017,
+        "hamming_loss": 0.004888268156424581,
+        "n": 358,
+        "macro_auroc": 0.9998048399687745,
+        "by_n_artifacts": [
+          {
+            "n_artifacts": 0,
+            "n_samples": 45,
+            "exact_match": 1.0,
+            "hamming": 0.0
+          },
+          {
+            "n_artifacts": 1,
+            "n_samples": 88,
+            "exact_match": 1.0,
+            "hamming": 0.0
+          },
+          {
+            "n_artifacts": 2,
+            "n_samples": 108,
+            "exact_match": 0.9629629629629629,
+            "hamming": 0.009259259259259259
+          },
+          {
+            "n_artifacts": 3,
+            "n_samples": 72,
+            "exact_match": 0.9583333333333334,
+            "hamming": 0.010416666666666666
+          },
+          {
+            "n_artifacts": 4,
+            "n_samples": 45,
+            "exact_match": 1.0,
+            "hamming": 0.0
+          }
+        ],
+        "per_combination": [
+          {
+            "combo": "0000",
+            "n_samples": 45,
+            "exact_match": 1.0,
+            "n_artifacts": 0
+          },
+          {
+            "combo": "0001",
+            "n_samples": 22,
+            "exact_match": 1.0,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "0010",
+            "n_samples": 22,
+            "exact_match": 1.0,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "0100",
+            "n_samples": 22,
+            "exact_match": 1.0,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "1000",
+            "n_samples": 22,
+            "exact_match": 1.0,
+            "n_artifacts": 1
+          },
+          {
+            "combo": "0011",
+            "n_samples": 18,
+            "exact_match": 1.0,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "0101",
+            "n_samples": 18,
+            "exact_match": 0.8888888888888888,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "0110",
+            "n_samples": 18,
+            "exact_match": 1.0,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "1001",
+            "n_samples": 18,
+            "exact_match": 1.0,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "1010",
+            "n_samples": 18,
+            "exact_match": 1.0,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "1100",
+            "n_samples": 18,
+            "exact_match": 0.8888888888888888,
+            "n_artifacts": 2
+          },
+          {
+            "combo": "0111",
+            "n_samples": 18,
+            "exact_match": 0.8333333333333334,
+            "n_artifacts": 3
+          },
+          {
+            "combo": "1011",
+            "n_samples": 18,
+            "exact_match": 1.0,
+            "n_artifacts": 3
+          },
+          {
+            "combo": "1101",
+            "n_samples": 18,
+            "exact_match": 1.0,
+            "n_artifacts": 3
+          },
+          {
+            "combo": "1110",
+            "n_samples": 18,
+            "exact_match": 1.0,
+            "n_artifacts": 3
+          },
+          {
+            "combo": "1111",
+            "n_samples": 45,
+            "exact_match": 1.0,
+            "n_artifacts": 4
+          }
+        ],
+        "cross_label_confusion": [
+          {
+            "present": "ring",
+            "falsely_predicted": "beam_hardening",
+            "n": 76,
+            "false_rate": 0.06578947368421052,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "beam_hardening",
+            "n": 76,
+            "false_rate": 0.06578947368421052,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "beam_hardening",
+            "n": 76,
+            "false_rate": 0.039473684210526314,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "metal",
+            "n": 76,
+            "false_rate": 0.02631578947368421,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "metal",
+            "n": 76,
+            "false_rate": 0.02631578947368421,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "ring",
+            "n": 76,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "beam_hardening",
+            "falsely_predicted": "scatter",
+            "n": 76,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "ring",
+            "falsely_predicted": "scatter",
+            "n": 76,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "ring",
+            "n": 76,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "metal",
+            "falsely_predicted": "scatter",
+            "n": 76,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "ring",
+            "n": 76,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          },
+          {
+            "present": "scatter",
+            "falsely_predicted": "metal",
+            "n": 76,
+            "false_rate": 0.0,
+            "recall_of_present": 1.0
+          }
+        ]
+      },
+      "clean_only": {
+        "per_label": {
+          "beam_hardening": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0,
+            "auroc": NaN
+          },
+          "ring": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0,
+            "auroc": NaN
+          },
+          "metal": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0,
+            "auroc": NaN
+          },
+          "scatter": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0,
+            "auroc": NaN
+          }
+        },
+        "macro_f1": 0.0,
+        "micro_f1": 0.0,
+        "exact_match": 1.0,
+        "hamming_loss": 0.0,
+        "n": 45,
+        "macro_auroc": NaN,
+        "by_n_artifacts": [
+          {
+            "n_artifacts": 0,
+            "n_samples": 45,
+            "exact_match": 1.0,
+            "hamming": 0.0
+          }
+        ],
+        "per_combination": [
+          {
+            "combo": "0000",
+            "n_samples": 45,
+            "exact_match": 1.0,
+            "n_artifacts": 0
+          }
+        ],
+        "cross_label_confusion": []
+      }
+    },
+    "thresholds": [
+      0.9,
+      0.04,
+      0.38,
+      0.04
+    ],
+    "thresholds_full_val": [
+      0.9,
+      0.04,
+      0.38,
+      0.04
+    ]
+  }
+}

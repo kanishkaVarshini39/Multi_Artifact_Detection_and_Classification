@@ -1,0 +1,236 @@
+{
+  "fixed|pretrained|20261017": {
+    "regime": "fixed",
+    "init": "pretrained",
+    "seed": 20261017,
+    "best_epoch": 10,
+    "seconds": 303.0,
+    "thresholds": [
+      0.1,
+      0.04,
+      0.18,
+      0.3
+    ],
+    "test": {
+      "macro_f1": 0.9964628905306872,
+      "exact_match": 0.9860335195530726,
+      "hamming": 0.0034916201117318434,
+      "per_label": {
+        "beam_hardening": 0.9887005649717514,
+        "ring": 1.0,
+        "metal": 0.9971509971509972,
+        "scatter": 1.0
+      },
+      "scatter_to_bh": 0.05263157894736842,
+      "bh_to_scatter": 0.0
+    },
+    "test_ood_severity": {
+      "macro_f1": 0.9985795454545454,
+      "exact_match": 0.9944444444444445,
+      "hamming": 0.001388888888888889,
+      "per_label": {
+        "beam_hardening": 0.9943181818181818,
+        "ring": 1.0,
+        "metal": 1.0,
+        "scatter": 1.0
+      },
+      "scatter_to_bh": 0.025974025974025976,
+      "bh_to_scatter": 0.0
+    }
+  },
+  "fixed|pretrained|20261018": {
+    "regime": "fixed",
+    "init": "pretrained",
+    "seed": 20261018,
+    "best_epoch": 12,
+    "seconds": 323.3,
+    "thresholds": [
+      0.1,
+      0.04,
+      0.06,
+      0.12
+    ],
+    "test": {
+      "macro_f1": 0.9957507082152974,
+      "exact_match": 0.9832402234636871,
+      "hamming": 0.004189944134078212,
+      "per_label": {
+        "beam_hardening": 0.9915014164305949,
+        "ring": 1.0,
+        "metal": 0.9915014164305949,
+        "scatter": 1.0
+      },
+      "scatter_to_bh": 0.039473684210526314,
+      "bh_to_scatter": 0.0
+    },
+    "test_ood_severity": {
+      "macro_f1": 0.9936339967441592,
+      "exact_match": 0.975,
+      "hamming": 0.00625,
+      "per_label": {
+        "beam_hardening": 0.9858356940509915,
+        "ring": 1.0,
+        "metal": 0.9915492957746479,
+        "scatter": 0.9971509971509972
+      },
+      "scatter_to_bh": 0.05194805194805195,
+      "bh_to_scatter": 0.0
+    }
+  },
+  "fixed|pretrained|20261019": {
+    "regime": "fixed",
+    "init": "pretrained",
+    "seed": 20261019,
+    "best_epoch": 9,
+    "seconds": 285.7,
+    "thresholds": [
+      0.08,
+      0.06,
+      0.4,
+      0.18
+    ],
+    "test": {
+      "macro_f1": 0.9978672947422947,
+      "exact_match": 0.9916201117318436,
+      "hamming": 0.002094972067039106,
+      "per_label": {
+        "beam_hardening": 0.9971509971509972,
+        "ring": 1.0,
+        "metal": 0.9943181818181818,
+        "scatter": 1.0
+      },
+      "scatter_to_bh": 0.013157894736842105,
+      "bh_to_scatter": 0.0
+    },
+    "test_ood_severity": {
+      "macro_f1": 0.9943422573189522,
+      "exact_match": 0.9777777777777777,
+      "hamming": 0.005555555555555556,
+      "per_label": {
+        "beam_hardening": 0.9830508474576272,
+        "ring": 1.0,
+        "metal": 0.9943181818181818,
+        "scatter": 1.0
+      },
+      "scatter_to_bh": 0.06493506493506493,
+      "bh_to_scatter": 0.0
+    }
+  },
+  "per_image|pretrained|20261017": {
+    "regime": "per_image",
+    "init": "pretrained",
+    "seed": 20261017,
+    "best_epoch": 34,
+    "seconds": 602.4,
+    "thresholds": [
+      0.68,
+      0.04,
+      0.26,
+      0.04
+    ],
+    "test": {
+      "macro_f1": 0.9964628905306872,
+      "exact_match": 0.9860335195530726,
+      "hamming": 0.0034916201117318434,
+      "per_label": {
+        "beam_hardening": 0.9887005649717514,
+        "ring": 1.0,
+        "metal": 0.9971509971509972,
+        "scatter": 1.0
+      },
+      "scatter_to_bh": 0.05263157894736842,
+      "bh_to_scatter": 0.0
+    },
+    "test_ood_severity": {
+      "macro_f1": 0.9836059311059312,
+      "exact_match": 0.9361111111111111,
+      "hamming": 0.01597222222222222,
+      "per_label": {
+        "beam_hardening": 0.96,
+        "ring": 1.0,
+        "metal": 0.9772727272727273,
+        "scatter": 0.9971509971509972
+      },
+      "scatter_to_bh": 0.09090909090909091,
+      "bh_to_scatter": 0.0
+    }
+  },
+  "per_image|pretrained|20261018": {
+    "regime": "per_image",
+    "init": "pretrained",
+    "seed": 20261018,
+    "best_epoch": 16,
+    "seconds": 374.3,
+    "thresholds": [
+      0.24,
+      0.04,
+      0.34,
+      0.04
+    ],
+    "test": {
+      "macro_f1": 0.9985795454545454,
+      "exact_match": 0.994413407821229,
+      "hamming": 0.0013966480446927375,
+      "per_label": {
+        "beam_hardening": 0.9943181818181818,
+        "ring": 1.0,
+        "metal": 1.0,
+        "scatter": 1.0
+      },
+      "scatter_to_bh": 0.02631578947368421,
+      "bh_to_scatter": 0.0
+    },
+    "test_ood_severity": {
+      "macro_f1": 0.9850339338626922,
+      "exact_match": 0.9444444444444444,
+      "hamming": 0.014583333333333334,
+      "per_label": {
+        "beam_hardening": 0.9688385269121813,
+        "ring": 1.0,
+        "metal": 0.9770114942528736,
+        "scatter": 0.9942857142857143
+      },
+      "scatter_to_bh": 0.09090909090909091,
+      "bh_to_scatter": 0.0
+    }
+  },
+  "per_image|pretrained|20261019": {
+    "regime": "per_image",
+    "init": "pretrained",
+    "seed": 20261019,
+    "best_epoch": 15,
+    "seconds": 364.2,
+    "thresholds": [
+      0.68,
+      0.04,
+      0.4,
+      0.28
+    ],
+    "test": {
+      "macro_f1": 0.9943502824858756,
+      "exact_match": 0.9776536312849162,
+      "hamming": 0.00558659217877095,
+      "per_label": {
+        "beam_hardening": 0.9887005649717514,
+        "ring": 1.0,
+        "metal": 0.9887005649717514,
+        "scatter": 1.0
+      },
+      "scatter_to_bh": 0.05263157894736842,
+      "bh_to_scatter": 0.0
+    },
+    "test_ood_severity": {
+      "macro_f1": 0.9843138107833626,
+      "exact_match": 0.9388888888888889,
+      "hamming": 0.015277777777777777,
+      "per_label": {
+        "beam_hardening": 0.9684813753581661,
+        "ring": 0.9943181818181818,
+        "metal": 0.9801699716713881,
+        "scatter": 0.9942857142857143
+      },
+      "scatter_to_bh": 0.06493506493506493,
+      "bh_to_scatter": 0.0
+    }
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "checkpoint": "resnet18_per_image_pretrained.pt",
+  "regime": "per_image",
+  "init": "pretrained",
+  "split": "test",
+  "dilate_px": 4,
+  "layers": {
+    "layer4": {
+      "localisation": {
+        "ring": {
+          "n": 175,
+          "mask_area_fraction": 0.2965625,
+          "pointing_game": 0.96,
+          "pointing_chance": 0.2965625,
+          "pointing_lift": 3.23709167544784,
+          "iou": 0.624574624568089,
+          "energy_ratio": 1.7238800154241822,
+          "energy_ratio_median": 1.7081756678642572
+        },
+        "metal": {
+          "n": 175,
+          "mask_area_fraction": 0.0218243408203125,
+          "pointing_game": 0.28,
+          "pointing_chance": 0.0218243408203125,
+          "pointing_lift": 12.829711664848842,
+          "iou": 0.042808882556288196,
+          "energy_ratio": 1.681390292904286,
+          "energy_ratio_median": 1.7153396098946785
+        }
+      },
+      "concentration": {
+        "beam_hardening": {
+          "top_frac": 0.1,
+          "empty_fraction_present": 0.0,
+          "empty_fraction_absent": 0.6174863387978142,
+          "n_scored": 175,
+          "concentration_present": 0.17586919844150542
+        },
+        "ring": {
+          "top_frac": 0.1,
+          "empty_fraction_present": 0.0,
+          "empty_fraction_absent": 0.644808743169399,
+          "n_scored": 175,
+          "concentration_present": 0.20723631526742664
+        },
+        "metal": {
+          "top_frac": 0.1,
+          "empty_fraction_present": 0.0,
+          "empty_fraction_absent": 0.6065573770491803,
+          "n_scored": 175,
+          "concentration_present": 0.17352248115198954
+        },
+        "scatter": {
+          "top_frac": 0.1,
+          "empty_fraction_present": 0.0,
+          "empty_fraction_absent": 0.8415300546448088,
+          "n_scored": 175,
+          "concentration_present": 0.15421416171959468
+        }
+      }
+    },
+    "layer3": {
+      "localisation": {
+        "ring": {
+          "n": 175,
+          "mask_area_fraction": 0.2965625,
+          "pointing_game": 0.9885714285714285,
+          "pointing_chance": 0.2965625,
+          "pointing_lift": 3.333433689598073,
+          "iou": 0.24364195788414056,
+          "energy_ratio": 2.835855451309249,
+          "energy_ratio_median": 2.807276280965091
+        },
+        "metal": {
+          "n": 175,
+          "mask_area_fraction": 0.0218243408203125,
+          "pointing_game": 0.02857142857142857,
+          "pointing_chance": 0.0218243408203125,
+          "pointing_lift": 1.3091542515151877,
+          "iou": 0.03032751477735512,
+          "energy_ratio": 1.2422067040699618,
+          "energy_ratio_median": 1.1948198724773633
+        }
+      },
+      "concentration": {
+        "beam_hardening": {
+          "top_frac": 0.1,
+          "empty_fraction_present": 0.0,
+          "empty_fraction_absent": 0.0,
+          "n_scored": 175,
+          "concentration_present": 0.32339304566383364
+        },
+        "ring": {
+          "top_frac": 0.1,
+          "empty_fraction_present": 0.0,
+          "empty_fraction_absent": 0.06557377049180328,
+          "n_scored": 175,
+          "concentration_present": 0.5516637761252267
+        },
+        "metal": {
+          "top_frac": 0.1,
+          "empty_fraction_present": 0.0,
+          "empty_fraction_absent": 0.0,
+          "n_scored": 175,
+          "concentration_present": 0.26833982118538446
+        },
+        "scatter": {
+          "top_frac": 0.1,
+          "empty_fraction_present": 0.0,
+          "empty_fraction_absent": 0.0,
+          "n_scored": 175,
+          "concentration_present": 0.3567111355066299
+        }
+      }
+    }
+  },
+  "occlusion": {
+    "ring": {
+      "n": 175,
+      "original": {
+        "mean_prob": 0.998588502407074,
+        "detected": 1.0
+      },
+      "region_erased": {
+        "mean_prob": 0.16740722954273224,
+        "detected": 0.5371428571428571
+      },
+      "region_only": {
+        "mean_prob": 0.993644654750824,
+        "detected": 1.0
+      }
+    },
+    "metal": {
+      "n": 175,
+      "original": {
+        "mean_prob": 0.9995347261428833,
+        "detected": 1.0
+      },
+      "region_erased": {
+        "mean_prob": 0.9989719986915588,
+        "detected": 1.0
+      },
+      "region_only": {
+        "mean_prob": 0.3587128221988678,
+        "detected": 0.5657142857142857
+      }
+    }
+  }
+}

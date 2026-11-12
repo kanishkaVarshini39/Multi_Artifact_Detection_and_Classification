@@ -1,0 +1,7 @@
+# Core - everything needed to GENERATE and VALIDATE the dataset.
+# These are the only libraries the generation pipeline imports.
+numpy==2.1.3
+scipy==1.15.3
+scikit-image==0.25.0
+scikit-learn==1.6.1
+matplotlib==3.10.0

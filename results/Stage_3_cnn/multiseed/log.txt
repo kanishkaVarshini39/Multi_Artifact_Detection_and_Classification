@@ -1,0 +1,8 @@
+==============================================================================
+MULTI-SEED REPEATS - 6 runs (3 seeds x 2 regimes x 1 inits)
+==============================================================================
+device mps   seeds [20261017, 20261018, 20261019]
+    caching 1680 images ... 440 MB
+    caching 362 images ... 95 MB
+    caching 358 images ... 94 MB
+    caching 360 images ...

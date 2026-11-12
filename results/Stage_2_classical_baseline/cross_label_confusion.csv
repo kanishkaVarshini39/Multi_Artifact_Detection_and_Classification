@@ -1,0 +1,13 @@
+present,falsely_predicted,n,false_rate,recall_of_present
+scatter,beam_hardening,76,0.06578947368421052,1.0
+ring,beam_hardening,76,0.039473684210526314,0.881578947368421
+metal,ring,76,0.02631578947368421,1.0
+metal,scatter,76,0.013157894736842105,1.0
+beam_hardening,ring,76,0.0,0.9736842105263158
+beam_hardening,metal,76,0.0,0.9342105263157895
+beam_hardening,scatter,76,0.0,0.9736842105263158
+ring,metal,76,0.0,0.9868421052631579
+ring,scatter,76,0.0,0.8947368421052632
+metal,beam_hardening,76,0.0,1.0
+scatter,ring,76,0.0,1.0
+scatter,metal,76,0.0,1.0

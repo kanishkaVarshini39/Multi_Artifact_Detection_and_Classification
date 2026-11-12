@@ -1,0 +1,66 @@
+==============================================================================
+EXPERIMENT 1 - single-artifact vs combined training
+==============================================================================
+    caching 1680 images ... 440 MB
+    caching 362 images ... 95 MB
+    caching 358 images ... 94 MB
+    caching 360 images ... 94 MB
+
+device mps   regime per_image   init pretrained
+  A_singles_only         single-artifact data only, n=630
+  B_combined_matched     combined data, size-matched, n=630
+  C_combined_full        full combined dataset, n=1680
+  test slices: single_or_clean=133, single_only=88, multi_artifact=225, all=358
+
+--- A_singles_only ---
+    device=mps  params=11,172,292  init=pretrained  severity_head=False
+      epoch   1  loss=0.3354  val macro-F1=0.6355  best=0.6355 @1
+      epoch  10  loss=0.0108  val macro-F1=0.6726  best=0.6825 @3
+      epoch  20  loss=0.0080  val macro-F1=0.6652  best=0.6865 @16
+      epoch  30  loss=0.0027  val macro-F1=0.6517  best=0.6865 @16
+      early stop at epoch 31 (no improvement for 15)
+      done in 155s, best val macro-F1 0.6865 @ epoch 16
+      single_or_clean  n=133  macro-F1=0.8771  exact=0.7895
+      single_only      n= 88  macro-F1=0.9944  exact=0.9886
+      multi_artifact   n=225  macro-F1=0.7584  exact=0.3156
+      all              n=358  macro-F1=0.7845  exact=0.4916
+
+--- B_combined_matched ---
+    device=mps  params=11,172,292  init=pretrained  severity_head=False
+      epoch   1  loss=0.3324  val macro-F1=0.6260  best=0.6260 @1
+      epoch  10  loss=0.0236  val macro-F1=0.9874  best=0.9950 @6
+      epoch  20  loss=0.0147  val macro-F1=0.9874  best=0.9950 @6
+      early stop at epoch 21 (no improvement for 15)
+      done in 103s, best val macro-F1 0.9950 @ epoch 6
+      single_or_clean  n=133  macro-F1=0.9836  exact=0.9774
+      single_only      n= 88  macro-F1=0.9836  exact=0.9659
+      multi_artifact   n=225  macro-F1=0.9912  exact=0.9511
+      all              n=358  macro-F1=0.9902  exact=0.9609
+
+--- C_combined_full ---
+    device=mps  params=11,172,292  init=pretrained  severity_head=False
+      epoch   1  loss=0.2039  val macro-F1=0.9441  best=0.9441 @1
+      epoch  10  loss=0.0158  val macro-F1=0.9924  best=0.9964 @6
+      epoch  20  loss=0.0112  val macro-F1=0.9884  best=0.9972 @16
+      epoch  30  loss=0.0077  val macro-F1=0.9924  best=0.9972 @16
+      early stop at epoch 31 (no improvement for 15)
+      done in 375s, best val macro-F1 0.9972 @ epoch 16
+      single_or_clean  n=133  macro-F1=1.0000  exact=1.0000
+      single_only      n= 88  macro-F1=1.0000  exact=1.0000
+      multi_artifact   n=225  macro-F1=0.9944  exact=0.9689
+      all              n=358  macro-F1=0.9951  exact=0.9804
+
+==============================================================================
+EXPERIMENT 1 SUMMARY  (macro-F1 / exact-match)
+==============================================================================
+arm                     n_train        single_or_clean            single_only         multi_artifact                    all
+A_singles_only              630            0.877/0.789            0.994/0.989            0.758/0.316            0.784/0.492
+B_combined_matched          630            0.984/0.977            0.984/0.966            0.991/0.951            0.990/0.961
+C_combined_full            1680            1.000/1.000            1.000/1.000            0.994/0.969            0.995/0.980
+
+on SINGLE-ARTIFACT test samples (the question the brief asks):
+  A singles-only      macro-F1 0.9944
+  B combined, matched macro-F1 0.9836  (vs A: -0.0109  <- composition effect, data size held equal)
+  C combined, full    macro-F1 1.0000  (vs B: +0.0164  <- data-quantity effect)
+
+total 643s

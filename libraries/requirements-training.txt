@@ -1,0 +1,8 @@
+# Additional libraries for the MODELLING stage (spec items 11-14).
+# Not needed to generate the dataset.
+torch==2.12.0
+torchvision==0.27.0
+pandas==2.2.3
+seaborn==0.13.2
+xgboost==3.3.0
+grad-cam==1.5.5          # pytorch-grad-cam, for the localisation module (item 5)
