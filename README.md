@@ -1,11 +1,25 @@
 # Project 29 — Multi-Artifact Detection and Classification
 
-Submission package. Everything needed to reproduce the study: the code for all
-five stages, the dependency manifests, and the full synthetic CT corpus split
-into training and testing data.
+Objectives
+1.Build a multi-artifact corpus in which the presence
+vector is exact by construction, severity is recorded, and
+no label is attached to an artifact that cannot be seen.
 
-R Kanishka Varshini · Department of Physics, IIT Roorkee · kanishka_rv@ph.iitr.ac.in
+2.Establish a fair classical baseline on hand-designed fea-
+tures, and a convolutional baseline, scored by identical
+code on identical splits.
 
+3.Determine what evidence each of them actually uses, by
+removing the overall-brightness cue and measuring what
+is lost.
+
+4.Measure the confusion between beam hardening and
+scatter under both conditions, since the physics predicts
+the two should be hard to separate.
+
+5.Test whether the regions we mark as ground truth are
+the regions the model relies on, by erasing them and
+re-running the model.
 
 ## What is in here
 
